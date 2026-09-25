@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-25",
+  "integrity": "124 file checksums; 2000 records; 1999 original NPZ curve hashes and minima; one preserved failure",
+  "reconstruction": "50 datasets x three splits: feature values and targets matched original frozen prepared data",
+  "training_smoke_checks": [
+    {
+      "record_id": "openml_1464_r0__random_000",
+      "validation_loss": 0.4673883931338787,
+      "original_loss": 0.4673883931338787,
+      "exact_loss_match": true,
+      "selected_rounds": 135,
+      "train_cpu_seconds": 0.02084166899999995
+    },
+    {
+      "record_id": "openml_377_r0__random_000",
+      "validation_loss": 0.57792175685366,
+      "original_loss": 0.57792175685366,
+      "exact_loss_match": true,
+      "selected_rounds": 364,
+      "train_cpu_seconds": 0.25193126200000004
+    },
+    {
+      "record_id": "openml_546_r0__random_000",
+      "validation_loss": 0.7179888534958517,
+      "original_loss": 0.7179888534958517,
+      "exact_loss_match": true,
+      "selected_rounds": 195,
+      "train_cpu_seconds": 0.02542446899999995
+    }
+  ],
+  "smoke_environment": {
+    "xgboost": "3.5.0-dev",
+    "numpy": "2.5.0",
+    "pandas": "3.0.3",
+    "scipy": "1.18.0",
+    "sklearn": "1.9.0",
+    "library_sha256": "b37cfda4bc173750622ae62c4731588fa206dd055ab47ea26bcf2582becdf089",
+    "scripts": {
+      "collector.py": "4639acc0e549e99750ee372a381ff8ae0a66f1631387e57ba2e5b319c5e9c13f",
+      "configuration_mapping.py": "f5f9d9aa5b27b02802bb5c672c90a03150fa93979d63d040ebcd5a2e61f941e8",
+      "reproduce.py": "56c1b8032fa6992f50242ac8a2183c0eb7697295c5e3f2aac18bfa272eb35308",
+      "verify.py": "88faa9582cc7c043f98ed0d293ce0c79599a6a8de8c1a44b4e3eda6d388fc7d1"
+    }
+  },
+  "examples": "read_database.py and ask_tell.py passed",
+  "scope": "Three fresh smoke fits using the original local XGBoost binary; no full recollection and no claim of numerical parity with release wheels.",
+  "post_smoke_changes": "Added output-directory advisory lock and safe serialization of nonfinite failure histories; no training settings changed."
+}

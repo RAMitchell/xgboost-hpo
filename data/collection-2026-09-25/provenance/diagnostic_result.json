@@ -1,0 +1,50 @@
+{
+  "source_record": "{ORIGINAL_STUDY}/database_collection_50/records/openml_40966_r0__random_014.json",
+  "same_params_and_dataset_seed": true,
+  "one_cpu_core": 0,
+  "checks": {
+    "best_matches_validation_argmin": true,
+    "curve_length_matches_rounds": true,
+    "validation_all_finite": true,
+    "training_all_finite": true
+  },
+  "guard_reason": null,
+  "cpu_seconds": 117.33429474399999,
+  "wall_seconds": 117.365763342008,
+  "best_iteration": 1997,
+  "validation_argmin": 1997,
+  "trained_rounds": 2000,
+  "curve_length": 2000,
+  "last_validation_values": [
+    0.0542991355652231,
+    0.05429530767054934,
+    0.0542843400312281,
+    0.05428558058638036,
+    0.05428523232630714
+  ],
+  "best_score": 0.0542843400312281,
+  "params": {
+    "learning_rate": 0.12798711885497274,
+    "max_depth": 8,
+    "max_leaves": 16,
+    "grow_policy": "lossguide",
+    "subsample": 0.8082769856509007,
+    "min_child_weight": 4.696158853284702e-05,
+    "reg_lambda": 3.3179079383109817,
+    "reg_alpha": 7.39361369341308e-05,
+    "gamma": 0.0,
+    "max_bin": 512,
+    "colsample_bytree": 1.0,
+    "colsample_bylevel": 1.0,
+    "colsample_bynode": 1.0,
+    "tree_method": "hist",
+    "device": "cpu",
+    "nthread": 1,
+    "seed": 20301890,
+    "verbosity": 0,
+    "validate_parameters": true,
+    "objective": "multi:softprob",
+    "num_class": 8,
+    "eval_metric": "mlogloss"
+  }
+}

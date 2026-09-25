@@ -1,0 +1,13 @@
+{
+  "datasets": 50,
+  "retained_rows_min": 528,
+  "retained_rows_median": 4508.0,
+  "retained_rows_max": 20000,
+  "training_rows_median": 2704.0,
+  "training_rows_max": 12080,
+  "features_median": 20.0,
+  "features_max": 4991,
+  "datasets_reduced_from_original": 17,
+  "retained_row_cap": 20000,
+  "retained_feature_cell_cap": 4000000
+}

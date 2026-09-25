@@ -1,0 +1,8 @@
+{
+  "python": "{ORIGINAL_STUDY}/.venv/bin/python",
+  "xgboost": "3.5.0-dev",
+  "library": "{ORIGINAL_STUDY}/development/vendor/xgboost/lib/libxgboost.so",
+  "numpy": "2.5.0",
+  "pandas": "3.0.3",
+  "scipy": "1.18.0"
+}

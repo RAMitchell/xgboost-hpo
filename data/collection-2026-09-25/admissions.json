@@ -1,0 +1,828 @@
+[
+  {
+    "did": 31,
+    "dataset": "credit-g",
+    "family": "openml-family:31",
+    "status": "excluded",
+    "error": "<HTTPError 503: 'Service Temporarily Unavailable'>",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 29, in prepare\n    data=fetch_openml(data_id=did,as_frame=True,parser='auto',data_home=R/'raw_cache',n_retries=2,delay=1.)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/site-packages/sklearn/utils/_param_validation.py\", line 218, in wrapper\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/site-packages/sklearn/datasets/_openml.py\", line 1135, in fetch_openml\n    bunch = _download_data_to_bunch(\n            ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/site-packages/sklearn/datasets/_openml.py\", line 689, in _download_data_to_bunch\n    X, y, frame, categories = _retry_with_clean_cache(\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/site-packages/sklearn/datasets/_openml.py\", line 66, in wrapper\n    return f(*args, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/site-packages/sklearn/datasets/_openml.py\", line 524, in _load_arff_response\n    gzip_file = _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/site-packages/sklearn/datasets/_openml.py\", line 178, in _open_openml_url\n    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/site-packages/sklearn/datasets/_openml.py\", line 102, in wrapper\n    return f(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/urllib/request.py\", line 215, in urlopen\n    return opener.open(url, data, timeout)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/urllib/request.py\", line 521, in open\n    response = meth(req, response)\n               ^^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/urllib/request.py\", line 630, in http_response\n    response = self.parent.error(\n               ^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/urllib/request.py\", line 553, in error\n    result = self._call_chain(*args)\n             ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/urllib/request.py\", line 492, in _call_chain\n    result = func(*args)\n             ^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/urllib/request.py\", line 745, in http_error_302\n    return self.parent.open(new, timeout=req.timeout)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/urllib/request.py\", line 521, in open\n    response = meth(req, response)\n               ^^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/urllib/request.py\", line 630, in http_response\n    response = self.parent.error(\n               ^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/urllib/request.py\", line 559, in error\n    return self._call_chain(*args)\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/urllib/request.py\", line 492, in _call_chain\n    result = func(*args)\n             ^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/urllib/request.py\", line 639, in http_error_default\n    raise HTTPError(req.full_url, code, msg, hdrs, fp)\nurllib.error.HTTPError: HTTP Error 503: Service Temporarily Unavailable\n"
+  },
+  {
+    "did": 184,
+    "dataset": "kropt",
+    "family": "openml-family:3",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/184')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/184\n"
+  },
+  {
+    "did": 422,
+    "dataset": "topo_2_1",
+    "family": "openml-family:422",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/422')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/422\n"
+  },
+  {
+    "did": 41147,
+    "dataset": "albert",
+    "family": "openml-family:41147",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/41147')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/41147\n"
+  },
+  {
+    "did": 40499,
+    "dataset": "texture",
+    "family": "openml-family:40499",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/40499')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/40499\n"
+  },
+  {
+    "did": 287,
+    "dataset": "wine_quality",
+    "family": "openml-family:287",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/287')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/287\n"
+  },
+  {
+    "did": 1479,
+    "dataset": "hill-valley",
+    "family": "openml-family:1479",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/1479')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/1479\n"
+  },
+  {
+    "did": 41166,
+    "dataset": "volkert",
+    "family": "openml-family:41166",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/41166')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/41166\n"
+  },
+  {
+    "did": 42571,
+    "dataset": "Allstate_Claims_Severity",
+    "family": "openml-family:42571",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/42571')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/42571\n"
+  },
+  {
+    "did": 41138,
+    "dataset": "APSFailure",
+    "family": "openml-family:41138",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/41138')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/41138\n"
+  },
+  {
+    "did": 41169,
+    "dataset": "helena",
+    "family": "openml-family:41169",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/41169')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/41169\n"
+  },
+  {
+    "did": 505,
+    "dataset": "tecator",
+    "family": "openml-family:505",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/505')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/505\n"
+  },
+  {
+    "did": 816,
+    "dataset": "puma8NH",
+    "family": "openml-family:752",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/816')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/816\n"
+  },
+  {
+    "did": 1044,
+    "dataset": "eye_movements",
+    "family": "openml-family:1044",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/1044')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/1044\n"
+  },
+  {
+    "did": 4549,
+    "dataset": "Buzzinsocialmedia_Twitter",
+    "family": "openml-family:4549",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/4549')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/4549\n"
+  },
+  {
+    "did": 1120,
+    "dataset": "MagicTelescope",
+    "family": "openml-family:1120",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/1120')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/1120\n"
+  },
+  {
+    "did": 188,
+    "dataset": "eucalyptus",
+    "family": "openml-family:188",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/188')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/188\n"
+  },
+  {
+    "did": 41980,
+    "dataset": "SAT11-HAND-runtime-regression",
+    "family": "openml-family:41980",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/41980')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/41980\n"
+  },
+  {
+    "did": 1489,
+    "dataset": "phoneme",
+    "family": "openml-family:1489",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/1489')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/1489\n"
+  },
+  {
+    "did": 40496,
+    "dataset": "LED-display-domain-7digit",
+    "family": "openml-family:40496",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/40496')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/40496\n"
+  },
+  {
+    "did": 550,
+    "dataset": "quake",
+    "family": "openml-family:550",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/550')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/550\n"
+  },
+  {
+    "did": 41159,
+    "dataset": "guillermo",
+    "family": "openml-family:41159",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/41159')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/41159\n"
+  },
+  {
+    "did": 1478,
+    "dataset": "har",
+    "family": "openml-family:1478",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/1478')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/1478\n"
+  },
+  {
+    "did": 42727,
+    "dataset": "colleges",
+    "family": "openml-family:930",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/42727')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/42727\n"
+  },
+  {
+    "did": 310,
+    "dataset": "mammography",
+    "family": "openml-family:310",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/310')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/310\n"
+  },
+  {
+    "did": 40927,
+    "dataset": "CIFAR_10",
+    "family": "openml-family:40927",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/40927')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/40927\n"
+  },
+  {
+    "did": 42730,
+    "dataset": "us_crime",
+    "family": "openml-family:42730",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/42730')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/42730\n"
+  },
+  {
+    "did": 725,
+    "dataset": "bank8FM",
+    "family": "openml-family:725",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/725')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/725\n"
+  },
+  {
+    "did": 1459,
+    "dataset": "artificial-characters",
+    "family": "openml-family:1459",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/1459')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/1459\n"
+  },
+  {
+    "did": 42729,
+    "dataset": "nyc-taxi-green-dec-2016",
+    "family": "openml-family:42729",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/42729')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/42729\n"
+  },
+  {
+    "did": 1471,
+    "dataset": "eeg-eye-state",
+    "family": "openml-family:1471",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/1471')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/1471\n"
+  },
+  {
+    "did": 41990,
+    "dataset": "GTSRB-HueHist",
+    "family": "openml-family:41986",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/41990')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/41990\n"
+  },
+  {
+    "did": 41021,
+    "dataset": "Moneyball",
+    "family": "openml-family:41021",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/41021')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/41021\n"
+  },
+  {
+    "did": 41161,
+    "dataset": "riccardo",
+    "family": "openml-family:41161",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/41161')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/41161\n"
+  },
+  {
+    "did": 11,
+    "dataset": "balance-scale",
+    "family": "openml-family:11",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/11')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/11\n"
+  },
+  {
+    "did": 42570,
+    "dataset": "Mercedes_Benz_Greener_Manufacturing",
+    "family": "openml-family:42570",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/42570')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/42570\n"
+  },
+  {
+    "did": 40645,
+    "dataset": "GAMETES_Epistasis_2-Way_1000atts_0_4H_EDM-1_EDM-1_1",
+    "family": "openml-family:40645",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/40645')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/40645\n"
+  },
+  {
+    "did": 40984,
+    "dataset": "segment",
+    "family": "openml-family:40984",
+    "status": "excluded",
+    "error": "RuntimeError('Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/40984')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 23, in prepare\n    desc=get_json(f'https://www.openml.org/api/v1/json/data/{did}',raw/f'{did}_description.json')['data_set_description']\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 15, in get_json\n    raise RuntimeError(f'Metadata request failed: {last}')\nRuntimeError: Metadata request failed: 503 Server Error: Service Temporarily Unavailable for url: https://www.openml.org/api/v1/json/data/40984\n"
+  },
+  {
+    "did": 43071,
+    "dataset": "MIP-2016-regression",
+    "family": "openml-family:43071",
+    "status": "admitted",
+    "n_rows": 1090,
+    "n_features": 144,
+    "problem_type": "regression"
+  },
+  {
+    "did": 727,
+    "dataset": "2dplanes",
+    "family": "openml-family:727",
+    "status": "admitted",
+    "n_rows": 20000,
+    "n_features": 10,
+    "problem_type": "binary"
+  },
+  {
+    "did": 41168,
+    "dataset": "jannis",
+    "family": "openml-family:41168",
+    "status": "admitted",
+    "n_rows": 20000,
+    "n_features": 54,
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 42726,
+    "dataset": "abalone",
+    "family": "openml-family:42726",
+    "status": "admitted",
+    "n_rows": 4177,
+    "n_features": 8,
+    "problem_type": "regression"
+  },
+  {
+    "did": 807,
+    "dataset": "kin8nm",
+    "family": "openml-family:807",
+    "status": "admitted",
+    "n_rows": 8192,
+    "n_features": 8,
+    "problem_type": "binary"
+  },
+  {
+    "did": 185,
+    "dataset": "baseball",
+    "family": "openml-family:185",
+    "status": "admitted",
+    "n_rows": 1340,
+    "n_features": 16,
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 546,
+    "dataset": "sensory",
+    "family": "openml-family:546",
+    "status": "admitted",
+    "n_rows": 576,
+    "n_features": 11,
+    "problem_type": "regression"
+  },
+  {
+    "did": 42733,
+    "dataset": "Click_prediction_small",
+    "family": "openml-family:42733",
+    "status": "excluded",
+    "error": "<HTTPError 500: 'Internal Server Error'>",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 29, in prepare\n    data=fetch_openml(data_id=did,as_frame=True,parser='auto',data_home=R/'raw_cache',n_retries=2,delay=1.)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/site-packages/sklearn/utils/_param_validation.py\", line 218, in wrapper\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/site-packages/sklearn/datasets/_openml.py\", line 1092, in fetch_openml\n    features_list = _get_data_features(data_id, data_home)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/site-packages/sklearn/datasets/_openml.py\", line 388, in _get_data_features\n    json_data = _get_json_content_from_openml_api(\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/site-packages/sklearn/datasets/_openml.py\", line 256, in _get_json_content_from_openml_api\n    raise error\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/site-packages/sklearn/datasets/_openml.py\", line 251, in _get_json_content_from_openml_api\n    return _load_json()\n           ^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/site-packages/sklearn/datasets/_openml.py\", line 66, in wrapper\n    return f(*args, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/site-packages/sklearn/datasets/_openml.py\", line 246, in _load_json\n    _open_openml_url(url, data_home, n_retries=n_retries, delay=delay)\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/site-packages/sklearn/datasets/_openml.py\", line 178, in _open_openml_url\n    _retry_on_network_error(n_retries, delay, req.full_url)(urlopen)(\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/site-packages/sklearn/datasets/_openml.py\", line 102, in wrapper\n    return f(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/urllib/request.py\", line 215, in urlopen\n    return opener.open(url, data, timeout)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/urllib/request.py\", line 521, in open\n    response = meth(req, response)\n               ^^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/urllib/request.py\", line 630, in http_response\n    response = self.parent.error(\n               ^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/urllib/request.py\", line 559, in error\n    return self._call_chain(*args)\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/urllib/request.py\", line 492, in _call_chain\n    result = func(*args)\n             ^^^^^^^^^^^\n  File \"/home/rorym/miniforge3/envs/xgboost/lib/python3.12/urllib/request.py\", line 639, in http_error_default\n    raise HTTPError(req.full_url, code, msg, hdrs, fp)\nurllib.error.HTTPError: HTTP Error 500: Internal Server Error\n"
+  },
+  {
+    "did": 2,
+    "dataset": "anneal",
+    "family": "openml-family:2",
+    "status": "excluded",
+    "error": "ValueError('fewer than10observations for a class after sampling')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 49, in prepare\n    if task=='classification' and np.bincount(y,minlength=nclasses).min()<10:raise ValueError('fewer than10observations for a class after sampling')\n                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: fewer than10observations for a class after sampling\n"
+  },
+  {
+    "did": 42225,
+    "dataset": "diamonds",
+    "family": "openml-family:42225",
+    "status": "admitted",
+    "n_rows": 20000,
+    "n_features": 9,
+    "problem_type": "regression"
+  },
+  {
+    "did": 1464,
+    "dataset": "blood-transfusion-service-center",
+    "family": "openml-family:1464",
+    "status": "admitted",
+    "n_rows": 748,
+    "n_features": 4,
+    "problem_type": "binary"
+  },
+  {
+    "did": 4538,
+    "dataset": "GesturePhaseSegmentationProcessed",
+    "family": "openml-family:4538",
+    "status": "admitted",
+    "n_rows": 9873,
+    "n_features": 32,
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 42731,
+    "dataset": "house_sales",
+    "family": "openml-family:574",
+    "status": "admitted",
+    "n_rows": 20000,
+    "n_features": 21,
+    "problem_type": "regression"
+  },
+  {
+    "did": 1049,
+    "dataset": "pc4",
+    "family": "openml-family:1049",
+    "status": "admitted",
+    "n_rows": 1458,
+    "n_features": 37,
+    "problem_type": "binary"
+  },
+  {
+    "did": 1538,
+    "dataset": "volcanoes-d1",
+    "family": "openml-family:1528",
+    "status": "admitted",
+    "n_rows": 8753,
+    "n_features": 3,
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 416,
+    "dataset": "yprop_4_1",
+    "family": "openml-family:416",
+    "status": "admitted",
+    "n_rows": 8885,
+    "n_features": 251,
+    "problem_type": "regression"
+  },
+  {
+    "did": 1142,
+    "dataset": "OVA_Endometrium",
+    "family": "openml-family:1128",
+    "status": "excluded",
+    "error": "ValueError('metadata resource admission: rows=1545, features=10935')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 27, in prepare\n    if not (100<=nr<=500000 and 1<=nf<=5000 and nr*nf<=30000000):raise ValueError(f'metadata resource admission: rows={nr}, features={nf}')\n                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: metadata resource admission: rows=1545, features=10935\n"
+  },
+  {
+    "did": 4541,
+    "dataset": "Diabetes130US",
+    "family": "openml-family:4541",
+    "status": "admitted",
+    "n_rows": 20000,
+    "n_features": 49,
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 507,
+    "dataset": "space_ga",
+    "family": "openml-family:507",
+    "status": "admitted",
+    "n_rows": 3107,
+    "n_features": 6,
+    "problem_type": "regression"
+  },
+  {
+    "did": 871,
+    "dataset": "pollen",
+    "family": "openml-family:871",
+    "status": "admitted",
+    "n_rows": 3848,
+    "n_features": 5,
+    "problem_type": "binary"
+  },
+  {
+    "did": 41084,
+    "dataset": "UMIST_Faces_Cropped",
+    "family": "openml-family:41084",
+    "status": "excluded",
+    "error": "ValueError('metadata resource admission: rows=575, features=10304')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 27, in prepare\n    if not (100<=nr<=500000 and 1<=nf<=5000 and nr*nf<=30000000):raise ValueError(f'metadata resource admission: rows={nr}, features={nf}')\n                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: metadata resource admission: rows=575, features=10304\n"
+  },
+  {
+    "did": 41540,
+    "dataset": "black_friday",
+    "family": "openml-family:41540",
+    "status": "admitted",
+    "n_rows": 20000,
+    "n_features": 9,
+    "problem_type": "regression"
+  },
+  {
+    "did": 41162,
+    "dataset": "kick",
+    "family": "openml-family:41162",
+    "status": "admitted",
+    "n_rows": 20000,
+    "n_features": 32,
+    "problem_type": "binary"
+  },
+  {
+    "did": 1475,
+    "dataset": "first-order-theorem-proving",
+    "family": "openml-family:1475",
+    "status": "admitted",
+    "n_rows": 6118,
+    "n_features": 51,
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 42572,
+    "dataset": "Santander_transaction_value",
+    "family": "openml-family:42572",
+    "status": "admitted",
+    "n_rows": 801,
+    "n_features": 4991,
+    "problem_type": "regression"
+  },
+  {
+    "did": 40983,
+    "dataset": "wilt",
+    "family": "openml-family:40983",
+    "status": "admitted",
+    "n_rows": 4839,
+    "n_features": 5,
+    "problem_type": "binary"
+  },
+  {
+    "did": 40966,
+    "dataset": "MiceProtein",
+    "family": "openml-family:40966",
+    "status": "admitted",
+    "n_rows": 1080,
+    "n_features": 77,
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 216,
+    "dataset": "elevators",
+    "family": "openml-family:216",
+    "status": "admitted",
+    "n_rows": 16599,
+    "n_features": 18,
+    "problem_type": "regression"
+  },
+  {
+    "did": 42742,
+    "dataset": "porto-seguro",
+    "family": "openml-family:42742",
+    "status": "excluded",
+    "error": "ValueError('metadata resource admission: rows=595212, features=57')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 27, in prepare\n    if not (100<=nr<=500000 and 1<=nf<=5000 and nr*nf<=30000000):raise ValueError(f'metadata resource admission: rows={nr}, features={nf}')\n                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: metadata resource admission: rows=595212, features=57\n"
+  },
+  {
+    "did": 40685,
+    "dataset": "shuttle",
+    "family": "openml-family:40685",
+    "status": "excluded",
+    "error": "ValueError('fewer than10observations for a class after sampling')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 49, in prepare\n    if task=='classification' and np.bincount(y,minlength=nclasses).min()<10:raise ValueError('fewer than10observations for a class after sampling')\n                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: fewer than10observations for a class after sampling\n"
+  },
+  {
+    "did": 839,
+    "dataset": "kdd_el_nino-small",
+    "family": "openml-family:839",
+    "status": "admitted",
+    "n_rows": 782,
+    "n_features": 8,
+    "problem_type": "binary"
+  },
+  {
+    "did": 1466,
+    "dataset": "cardiotocography",
+    "family": "openml-family:1466",
+    "status": "admitted",
+    "n_rows": 2126,
+    "n_features": 35,
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 151,
+    "dataset": "electricity",
+    "family": "openml-family:151",
+    "status": "admitted",
+    "n_rows": 20000,
+    "n_features": 8,
+    "problem_type": "binary"
+  },
+  {
+    "did": 41671,
+    "dataset": "microaggregation2",
+    "family": "openml-family:41671",
+    "status": "admitted",
+    "n_rows": 20000,
+    "n_features": 20,
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 1461,
+    "dataset": "bank-marketing",
+    "family": "openml-family:1461",
+    "status": "admitted",
+    "n_rows": 20000,
+    "n_features": 16,
+    "problem_type": "binary"
+  },
+  {
+    "did": 42746,
+    "dataset": "KDDCup99",
+    "family": "openml-family:42746",
+    "status": "excluded",
+    "error": "ValueError('metadata resource admission: rows=4898431, features=41')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 27, in prepare\n    if not (100<=nr<=500000 and 1<=nf<=5000 and nr*nf<=30000000):raise ValueError(f'metadata resource admission: rows={nr}, features={nf}')\n                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: metadata resource admission: rows=4898431, features=41\n"
+  },
+  {
+    "did": 1494,
+    "dataset": "qsar-biodeg",
+    "family": "openml-family:1494",
+    "status": "admitted",
+    "n_rows": 1055,
+    "n_features": 41,
+    "problem_type": "binary"
+  },
+  {
+    "did": 54,
+    "dataset": "vehicle",
+    "family": "openml-family:54",
+    "status": "admitted",
+    "n_rows": 846,
+    "n_features": 18,
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 40994,
+    "dataset": "climate-model-simulation-crashes",
+    "family": "openml-family:40994",
+    "status": "admitted",
+    "n_rows": 540,
+    "n_features": 18,
+    "problem_type": "binary"
+  },
+  {
+    "did": 60,
+    "dataset": "waveform-5000",
+    "family": "openml-family:60",
+    "status": "admitted",
+    "n_rows": 5000,
+    "n_features": 40,
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 4135,
+    "dataset": "Amazon_employee_access",
+    "family": "openml-family:4135",
+    "status": "admitted",
+    "n_rows": 20000,
+    "n_features": 9,
+    "problem_type": "binary"
+  },
+  {
+    "did": 42345,
+    "dataset": "Traffic_violations",
+    "family": "openml-family:42345",
+    "status": "admitted",
+    "n_rows": 20000,
+    "n_features": 20,
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 41156,
+    "dataset": "ada",
+    "family": "openml-family:1043",
+    "status": "admitted",
+    "n_rows": 4147,
+    "n_features": 48,
+    "problem_type": "binary"
+  },
+  {
+    "did": 1497,
+    "dataset": "wall-robot-navigation",
+    "family": "openml-family:1497",
+    "status": "admitted",
+    "n_rows": 5456,
+    "n_features": 24,
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 757,
+    "dataset": "meta",
+    "family": "openml-family:757",
+    "status": "admitted",
+    "n_rows": 528,
+    "n_features": 21,
+    "problem_type": "binary"
+  },
+  {
+    "did": 1501,
+    "dataset": "semeion",
+    "family": "openml-family:1501",
+    "status": "admitted",
+    "n_rows": 1593,
+    "n_features": 256,
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 901,
+    "dataset": "fried",
+    "family": "openml-family:901",
+    "status": "admitted",
+    "n_rows": 20000,
+    "n_features": 10,
+    "problem_type": "binary"
+  },
+  {
+    "did": 1549,
+    "dataset": "autoUniv-au6-750",
+    "family": "openml-family:1547",
+    "status": "admitted",
+    "n_rows": 750,
+    "n_features": 40,
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 802,
+    "dataset": "pbcseq",
+    "family": "openml-family:802",
+    "status": "admitted",
+    "n_rows": 1945,
+    "n_features": 18,
+    "problem_type": "binary"
+  },
+  {
+    "did": 1491,
+    "dataset": "one-hundred-plants-margin",
+    "family": "openml-family:1491",
+    "status": "excluded",
+    "error": "ValueError('more than50classes')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 28, in prepare\n    if c['problem_type']=='multiclass' and float(q.get('NumberOfClasses',0))>50:raise ValueError('more than50classes')\n                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: more than50classes\n"
+  },
+  {
+    "did": 4134,
+    "dataset": "Bioresponse",
+    "family": "openml-family:4134",
+    "status": "admitted",
+    "n_rows": 2252,
+    "n_features": 1776,
+    "problem_type": "binary"
+  },
+  {
+    "did": 6,
+    "dataset": "letter",
+    "family": "openml-family:6",
+    "status": "admitted",
+    "n_rows": 20000,
+    "n_features": 16,
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 1596,
+    "dataset": "covertype",
+    "family": "openml-family:1596",
+    "status": "excluded",
+    "error": "ValueError('metadata resource admission: rows=581012, features=54')",
+    "traceback": "Traceback (most recent call last):\n  File \"{ORIGINAL_STUDY}/database_collection_50/run.py\", line 24, in offer\n    sp=prepare(c,identity);datasets.append(sp);counts[c['problem_type']]+=1;admissions.append(dict(did=c['did'],dataset=c['dataset'],family=c['family'],status='admitted',n_rows=sp['n_rows'],n_features=len(sp['features']),problem_type=c['problem_type']))\n       ^^^^^^^^^^^^^^^^^^^\n  File \"{ORIGINAL_STUDY}/database_collection_50/prepare_data.py\", line 27, in prepare\n    if not (100<=nr<=500000 and 1<=nf<=5000 and nr*nf<=30000000):raise ValueError(f'metadata resource admission: rows={nr}, features={nf}')\n                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: metadata resource admission: rows=581012, features=54\n"
+  },
+  {
+    "did": 32,
+    "dataset": "pendigits",
+    "family": "openml-family:32",
+    "status": "admitted",
+    "n_rows": 10992,
+    "n_features": 16,
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 40978,
+    "dataset": "Internet-Advertisements",
+    "family": "openml-family:40978",
+    "status": "admitted",
+    "n_rows": 2567,
+    "n_features": 1558,
+    "problem_type": "binary"
+  },
+  {
+    "did": 1039,
+    "dataset": "hiva_agnostic",
+    "family": "openml-family:1039",
+    "status": "admitted",
+    "n_rows": 2473,
+    "n_features": 1617,
+    "problem_type": "binary"
+  },
+  {
+    "did": 40922,
+    "dataset": "Run_or_walk_information",
+    "family": "openml-family:40922",
+    "status": "admitted",
+    "n_rows": 20000,
+    "n_features": 6,
+    "problem_type": "binary"
+  },
+  {
+    "did": 377,
+    "dataset": "synthetic_control",
+    "family": "openml-family:377",
+    "status": "admitted",
+    "n_rows": 600,
+    "n_features": 60,
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 6332,
+    "dataset": "cylinder-bands",
+    "family": "openml-family:6332",
+    "status": "admitted",
+    "n_rows": 540,
+    "n_features": 37,
+    "problem_type": "binary"
+  }
+]

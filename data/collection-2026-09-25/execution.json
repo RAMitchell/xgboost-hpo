@@ -1,0 +1,20 @@
+{
+  "state": "incomplete",
+  "identity": "7356df30729f9b02b68fd72b7c313a3336d242e8b26475c2d38a14af9fe26545",
+  "datasets": 50,
+  "records": 2000,
+  "missing": 0,
+  "counts": {
+    "complete": 1999,
+    "censored": 0,
+    "failed": 1
+  },
+  "round_cap_records": 185,
+  "train_cpu_seconds": 6027.580945384999,
+  "job_cpu_seconds": 6661.497290397,
+  "max_worker_rss_mib": 1985.27734375,
+  "workers": 16,
+  "threads_per_fit": 1,
+  "updated": "2026-09-25T12:28:48.745803+00:00",
+  "collection_elapsed_seconds": 950.3815120409708
+}

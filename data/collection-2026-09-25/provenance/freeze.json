@@ -1,0 +1,20 @@
+{
+  "identity": "7356df30729f9b02b68fd72b7c313a3336d242e8b26475c2d38a14af9fe26545",
+  "hashes": {
+    "{ORIGINAL_STUDY}/database_collection_50/configuration_mapping.py": "f5f9d9aa5b27b02802bb5c672c90a03150fa93979d63d040ebcd5a2e61f941e8",
+    "{ORIGINAL_STUDY}/database_collection_50/run.py": "fca77a666e91c833e32afb33a1be7b46df68416e90390e624e2ef6d2127888d7",
+    "{ORIGINAL_STUDY}/database_collection_50/prepare_data.py": "e4e02393850c24b940fef792eff79db6e86a351829d64622a6d696080a34c294",
+    "{ORIGINAL_STUDY}/database_collection_50/setup.py": "47db30b081b9279622d9a3e622d9dc44a4572474113b9293b251c37865f2f8a1",
+    "{ORIGINAL_STUDY}/database_collection_50/collector.py": "4f7a1170225f58ca389f8c2ff826d19e9824c601eaf99e7211ac73c57af6bf16",
+    "{ORIGINAL_STUDY}/database_collection_50/reserved_families.json": "275f04a7865e2068dc381e311ca9941b9c3b5ec7bac6413d8a7e8ca9b6b6409b",
+    "{ORIGINAL_STUDY}/database_collection_50/environment.json": "088d22f80f6f336ecea0e465d776fbf1195c6db1183f6f5312d48249f3759a2b",
+    "{ORIGINAL_STUDY}/database_collection_50/configurations.json": "8ff8d90a64271fcd025c23268ce3786b54bbeab1a2c921549ddccb1249e6a029",
+    "{ORIGINAL_STUDY}/database_collection_50/hardware.json": "b93a06a8c87f3117a0efa367a5ea7db5a452f2c7468ba1068f04f84cbd6b9190",
+    "{ORIGINAL_STUDY}/database_collection_50/candidates.json": "44be1fd5d62419217af173c6805988a4c3ad56919a1a4f28a8a6f4dbda9416d0",
+    "{ORIGINAL_STUDY}/database_collection_50/PROTOCOL.md": "f79bbf2c3c732d2506b523f80ab6e7f68e83cf2a70f989ebf0e66d706b2cb26b",
+    "{ORIGINAL_STUDY}/dataset_breadth/source_rows.json": "6b676009b3c00ba59a1855d6113ca9a02985ad62147deeca4dfa6f8ffc9199fd",
+    "{ORIGINAL_STUDY}/dataset_breadth/evaluation_rows.json": "66502ea26926cee514e07d6dd66c2496c4c7268f9fc7d5ee1f6bfa060bbef048",
+    "{ORIGINAL_STUDY}/pilot/family_registry.csv": "561ba482561bf174ee872c6ce0d77ac2b2c213ddebfb4de82a856f20dcf1f181",
+    "{ORIGINAL_STUDY}/development/vendor/xgboost/lib/libxgboost.so": "b37cfda4bc173750622ae62c4731588fa206dd055ab47ea26bcf2582becdf089"
+  }
+}
