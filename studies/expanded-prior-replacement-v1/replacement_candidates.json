@@ -1,0 +1,62 @@
+[
+  {
+    "did": 40985,
+    "dataset": "tamilnadu-electricity",
+    "family": "openml-family:40985",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 181,
+    "dataset": "yeast",
+    "family": "openml-family:181",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 1483,
+    "dataset": "ldpa",
+    "family": "openml-family:1483",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 41972,
+    "dataset": "Indian_pines",
+    "family": "openml-family:41972",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 182,
+    "dataset": "satimage",
+    "family": "openml-family:182",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 1515,
+    "dataset": "micro-mass",
+    "family": "openml-family:1515",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 40971,
+    "dataset": "collins",
+    "family": "openml-family:40971",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 46,
+    "dataset": "splice",
+    "family": "openml-family:46",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 155,
+    "dataset": "pokerhand",
+    "family": "openml-family:155",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 41982,
+    "dataset": "Kuzushiji-MNIST",
+    "family": "openml-family:41982",
+    "problem_type": "multiclass"
+  }
+]

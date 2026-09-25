@@ -1,0 +1,24 @@
+{
+  "identity": "596b1be90c686eade8f1e4da45e4ec0cb0bfb3a67c8d851327cfbde8ed3000bb",
+  "parent_identity": "bab6051d8e3d514637fe5c284ef74a2c4c45215007c9121deb98379176c68127",
+  "datasets": 30,
+  "attempted": 2880,
+  "reused": 2812,
+  "fresh_attempted": 68,
+  "counts": {
+    "complete": 2822,
+    "censored": 58,
+    "failed": 0
+  },
+  "fresh_counts": {
+    "complete": 10,
+    "censored": 58,
+    "failed": 0
+  },
+  "round_cap": 291,
+  "wall_seconds": 730.6203160809819,
+  "job_cpu_seconds": 19747.094383119,
+  "training_cpu_seconds": 19637.665640972,
+  "workers": 32,
+  "fit_cpu_cap": 300
+}

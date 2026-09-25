@@ -1,5 +1,9 @@
 # Reproducing the collection
 
+For **new collections**, use `scripts/collect.py`; it reads the default 300 CPU-second training limit from `collection_defaults.json` and records that limit in run identity. Pass `--fit-cpu-seconds` only for an explicit override. The current replacement study has its own [overlay and replay instructions](../studies/expanded-prior-replacement-v1/README.md).
+
+The historical `scripts/reproduce.py` and the design below retain the original 120-second limit for archival reproduction. Changing the current default does not rewrite those records.
+
 ## Two different guarantees
 
 1. **Read and verify the archived results.** `python scripts/verify.py` verifies the portable manifest, 2,000-record coverage, disjoint row splits, family exclusion, and all 1,999 original curve hashes and loss summaries. This requires no training or OpenML access.

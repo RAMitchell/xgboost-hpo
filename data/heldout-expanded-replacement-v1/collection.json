@@ -1,0 +1,25 @@
+{
+  "identity": "e19e0719c3c8554ce6348a2f7f2fa5950e4bd7d315c938b6a0276f1dadde1e2e",
+  "parent_identity": "bab6051d8e3d514637fe5c284ef74a2c4c45215007c9121deb98379176c68127",
+  "datasets": 30,
+  "attempted": 2880,
+  "reused": 2784,
+  "fresh_attempted": 96,
+  "replacement": "tamilnadu-electricity",
+  "counts": {
+    "complete": 2880,
+    "censored": 0,
+    "failed": 0
+  },
+  "fresh_counts": {
+    "complete": 96,
+    "censored": 0,
+    "failed": 0
+  },
+  "round_cap": 289,
+  "wall_seconds": 15.0239216319751,
+  "job_cpu_seconds": 152.153323248,
+  "training_cpu_seconds": 149.097780472,
+  "workers": 32,
+  "fit_cpu_cap": 300
+}

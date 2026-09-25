@@ -1,0 +1,20 @@
+{
+  "parent_snapshot": "data/heldout-expanded-v1",
+  "parent_manifest_sha256": "34790c035eb1a6908ce3f09f382c590617ccb3bce632abb4a920489e0c8da651",
+  "excluded_uids": [
+    "openml_41163_r0"
+  ],
+  "replacement_records": 97,
+  "sha256": {
+    "admissions.json": "d460ba41a6b125e143f55367242170f184387ac91d5acfbd3ea28396a461a995",
+    "collection.json": "6052b853e99081e49daa60cefecba76b30c6c55e6eeea893646be78284ddf3d8",
+    "configurations.json": "04d7c7d3d8bcbe93036887f0c959ffa55fbe8a8b63980cafcd1b39895884a9f5",
+    "datasets.json": "bbe9f4da0493c03d0433fc005af023f36bb6f6df7b59395bd2699b67e825c4ab",
+    "outcome_audit.json": "ec370f78427d4e949863b419e672c1e5f03f2dd9362eb8e829ce5282dd9f1103",
+    "replacement_curves.zip": "240c79d5e837e7fa19dd1bb363e97e6c11cdf83b7612413bb857a64802441333",
+    "replacement_evaluations.parquet": "4982fdc8406c1b43ebd52d626475653604238a56a96f0c05e882ac382642e2c6",
+    "replacement_records.jsonl.gz": "4cd872181a7f231d5392f386f6863067f7380f5025b94bf792490635a0c58de3",
+    "replay_execution.json": "de90efc9d223ee4ea14234644886cfce1eb3e4c80ecb5376d3743e29d5d23dff",
+    "splits/openml_40985_r0.npz": "3b22db9ada43b12cd2106688e30b0364a5c4667240d97fc13b3079c778f1a896"
+  }
+}

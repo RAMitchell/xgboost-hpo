@@ -1,0 +1,8 @@
+{
+  "datasets": 30,
+  "records": 2880,
+  "delta_records": 97,
+  "trajectories": 2100,
+  "unchanged_trajectories_exactly_matched": 1960,
+  "checks": "freeze, public hashes, no prior-family overlap, roster exclusion, splits, parameters, mfeat prefix, curve minima, oracle, trajectories and aggregate metrics"
+}

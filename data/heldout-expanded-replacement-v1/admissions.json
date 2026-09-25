@@ -1,0 +1,9 @@
+[
+  {
+    "did": 40985,
+    "dataset": "tamilnadu-electricity",
+    "family": "openml-family:40985",
+    "problem_type": "multiclass",
+    "status": "admitted"
+  }
+]

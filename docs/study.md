@@ -2,9 +2,15 @@
 
 ## Latest completed study
 
-The expanded-space prior has now been trained and evaluated: see [the study](../studies/expanded-prior-v1/README.md) and [interpretation](../studies/expanded-prior-v1/reports/INTERPRETATION.md). The 30-family comparison shows useful early transfer on the 28 complete candidate pools but no robust overall advantage when time-capped fits are penalized. All 2,880 objective evaluations and 2,100 replay paths are preserved. Prior fitting, projection, replay, and reporting scripts are now portable. No experiment remains running.
+The active comparison is [expanded-prior-replacement-v1](../studies/expanded-prior-replacement-v1/README.md), with [interpretation](../studies/expanded-prior-replacement-v1/reports/INTERPRETATION.md) and [results](../studies/expanded-prior-replacement-v1/reports/RESULTS.md). At the user's request, Dilbert was replaced by tamilnadu-electricity, the first eligible unused multiclass family in the reserved order. The training limit is now 300 CPU-seconds. The 30-family suite has 2,880 completed evaluations and no timeouts. All 2,100 optimizer paths have been replayed and verified; no experiment remains running.
 
-The material below records the context and plan preceding that completed study; proposed steps 1–4 have now been performed in expanded-prior-v1. The next priority is explicitly testing failure/cost handling while preserving this result.
+The historical-prior GP has 15.5% lower early regret than the no-history GP on this revised suite (95% family-bootstrap interval: 4.6%–26.3% lower; nominal Holm p=0.0489). SMAC has the lowest regret point estimate at evaluation 32. **The exclusion was post-hoc; these conditional results are not an untouched confirmation.** The replacement also has far fewer features than Dilbert.
+
+The original [two-minute comparison](../studies/expanded-prior-v1/README.md), including its unfavorable overall prior result under timeout penalties, remains intact. The intervening five-minute Dilbert rerun is [documented as superseded](../studies/expanded-prior-300s-v1/STATUS.md); its training finished but optimizer analysis did not.
+
+For new collections use `scripts/collect.py`, which defaults to 300 CPU-seconds from `collection_defaults.json`. Current user-authorized concurrency is 32 physical cores. Preserve historical snapshots and record all follow-ups in RESEARCH_LOG.md.
+
+The material below records earlier context and plans. Steps 1–4 have been performed; historical claims are not the current study status.
 
 ## Research objective
 

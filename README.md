@@ -4,9 +4,15 @@ Research data and reproducible experiments for few-shot hyperparameter optimizat
 
 The aim is to learn useful search priors from historical evaluations, improve the first few proposals on a new dataset, and keep adapting as new observations arrive. This is an independent research repository, not an official XGBoost API.
 
+## Current evaluation and collection defaults
+
+The current comparison replaces Dilbert with the first eligible unused multiclass dataset from the reserved pool and uses a **300 CPU-second training limit per fit**. The other 29 families, prior and optimizer policies are retained. See the [current protocol](studies/expanded-prior-replacement-v1/PROTOCOL.md), [reproduction guide](studies/expanded-prior-replacement-v1/README.md), and [research log](RESEARCH_LOG.md). The replacement is a documented post-hoc benchmark revision.
+
+Use `scripts/collect.py` for new collections. Its default is read from [collection_defaults.json](collection_defaults.json), currently five minutes; `--fit-cpu-seconds` allows an explicit override. The historical `scripts/reproduce.py` retains the original two-minute limit for reproducing archived runs.
+
 ## Expanded-space prior comparison
 
-The next study trains a historical mean/variance/kernel prior from the first database and evaluates it on separate dataset families and 96 fresh configurations. It compares the GP with no-history and online-kernel GPs, SMAC, Optuna TPE, and random search.
+The original expanded-space study trained a historical mean/variance/kernel prior from the first database and evaluated it on separate dataset families and 96 fresh configurations, with a two-minute training limit. It compared the GP with no-history and online-kernel GPs, SMAC, Optuna TPE, and random search.
 
 See the [study protocol and reproduction guide](studies/expanded-prior-v1/README.md) and [results](studies/expanded-prior-v1/reports/RESULTS.md). These are finite-pool optimizer comparisons, with validation objectives on held-out families; target test losses are not used.
 
@@ -48,24 +54,24 @@ valid = results[results.status == "complete"]
 print(valid[["dataset", "cid", "validation_loss", "train_cpu_seconds"]].head())
 ```
 
-## Reproduce objective evaluations
+## Collect objective evaluations
 
 Start with one configuration on a small dataset:
 
 ```bash
-python scripts/reproduce.py --dataset-id 1464 --config-id random_000 --workers 1
+python scripts/collect.py --dataset-id 1464 --config-id random_000 --workers 1
 ```
 
 Reconstruct all source splits without training:
 
 ```bash
-python scripts/reproduce.py --all --prepare-only
+python scripts/collect.py --all --prepare-only
 ```
 
-Recollect all 2,000 evaluations with up to 16 concurrent, single-thread fits:
+Recollect all 2,000 evaluations with up to 32 concurrent, single-thread fits and the current five-minute limit:
 
 ```bash
-python scripts/reproduce.py --all --workers 16 --output runs/full-reproduction
+python scripts/collect.py --all --workers 32 --output runs/full-reproduction
 ```
 
 Outputs are separate from the published snapshot. Existing evaluations are reused only within a matching environment/code identity. A failed or censored record is never silently replaced; choose another output directory for retries. Create `runs/full-reproduction/STOP` to request stopping at an iteration boundary, and remove it before resuming. Preparation downloads are bounded by the downloader's network behavior. The portable runner has no automatic 24-hour dispatch deadline, unlike the original controller.
@@ -84,7 +90,7 @@ Outputs are separate from the published snapshot. Existing evaluations are reuse
 - `examples/`: loading the database and NumPy-only GP ask/tell.
 - `data/collection-2026-09-25/`: immutable first collection.
 
-Earlier optimizer comparisons informed this collection but are not all migrated into this first repository snapshot. The fresh collection itself contains objective-model evaluations, not a new optimizer leaderboard or a fitted prior for the expanded search space.
+Earlier optimizer comparisons informed this collection but are not all migrated. The versioned studies contain the fitted expanded-space prior, optimizer comparisons and subsequent dataset/runtime revisions.
 
 ## License and attribution
 

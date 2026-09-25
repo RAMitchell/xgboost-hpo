@@ -35,3 +35,26 @@ User authorized learning a prior from the newly collected results and comparing 
 -All source and policy freezes retained; no policy or prior was changed after target outcomes. Results motivate a separately versioned timeout/failure-handling experiment, not silent tuning of this comparison.
 
 Publication checks: the compact database, all2,100replay paths, source/policy freeze and final artifact manifest passed verification. A separate public-table replay of140trajectories (one complete pool and Dilbert's censored pool) matched every archived proposal, without any new objective training. The generated figure was visually inspected. Forty-nine censored fits exhibited the stale native best-iteration condition; the collector preserved the correct curve-minimum prefix and censored status.
+
+## 2026-09-25 — Five-minute training-limit sensitivity started
+
+User requested repeating the held-out evaluation with a300CPU-second per-fit limit and32cores. New immutable study: `studies/expanded-prior-300s-v1`, identity `596b1be90c686eade8f1e4da45e4ec0cb0bfb3a67c8d851327cfbde8ed3000bb`. Reuse2,812completed fits verbatim; restart68censored fits (67Dilbert,1mfeat-factors), retaining the prior, candidates, splits, seeds, patience, round limit, optimizer policies and scoring. Retrained curve prefixes must match before replay. The controller automatically runs all2,100optimizer paths and exports a compact replacement-record delta. Local launch/progress/logs: `runs/expanded-prior-300s-v1`.
+
+This is an explicitly post-hoc resource sensitivity. Remaining timeouts still receive the original failure penalty; best-prefix scoring is not silently substituted. Changing completed pool membership can change the optimum and regret denominator, so before/after regret is not an absolute common-scale loss comparison.
+
+## 2026-09-25 — Dilbert removed; five-minute default adopted
+
+At the user's request, the current held-out comparison excludes Dilbert and selects the first eligible unused multiclass family in the original reserved order, without inspecting optimizer performance for selection. New study: `studies/expanded-prior-replacement-v1`, freeze `e19e0719c3c8554ce6348a2f7f2fa5950e4bd7d315c938b6a0276f1dadde1e2e`. Reuse 2,783 original completed fits and the successful 300-second mfeat-factors/eval_011 rerun; train only the replacement's 96 configurations on up to 32 cores. Prior, policy, candidate pool, seeds and failure scoring are unchanged.
+
+The preceding 68-fit rerun finished in 730.6 seconds / 5.49 job CPU-hours: 10 complete, 58 still censored. Its replay was halted by an overly strict round-count audit: one 300-second Dilbert fit trained fewer rounds than at 120 seconds, while the common loss prefix matched. More CPU allowance does not guarantee more rounds under changed concurrency/resource contention. The superseded attempt is documented in its STATUS.md; it has no completed optimizer results.
+
+For future work, `collection_defaults.json` sets 300 CPU-seconds per fit and `scripts/collect.py` applies and records that default inside each worker. Root README and AGENTS.md direct new studies to this entry point. Immutable historical scripts retain their original settings solely for archival reproduction.
+
+## 2026-09-25 — Replacement evaluation completed
+
+- Replaced Dilbert with tamilnadu-electricity (OpenML 40985): first eligible unused multiclass family in the frozen original order; 11,999 training rows, two features, 20 classes. Prior-training families remain disjoint. The new suite retains 30 families.
+- Trained only 96 new fits in 15.0 seconds / 152.2 job CPU-seconds on up to 32 cores; reused 2,784 completed records, including the successful five-minute mfeat-factors update. All 2,880 current records are complete, with zero timeouts/failures.
+- Replayed 2,100 optimizer trajectories in 10.9 seconds. Historical-prior GP early area 0.06189, no-history GP 0.07321, online GP-EI 0.07729, SMAC 0.08050, TPE 0.08046, random 0.07470. Prior early regret is 15.5% lower than no-history (95% family-bootstrap interval 4.6%–26.3% lower; Holm p=0.0489). SMAC has the lowest budget-32 point estimate, 0.01090.
+- This is a post-hoc benchmark revision: confidence intervals and nominal p-values do not account for the adaptive dataset exclusion. The replacement has much lower feature dimensionality than Dilbert. Do not describe this as an untouched confirmation or general superiority.
+- Saved the roughly 19 MB public data overlay (97 records: 96 new plus one updated), exact replacement split indices, frozen policies, reports and chart under `data/heldout-expanded-replacement-v1` and `studies/expanded-prior-replacement-v1`. Original snapshots remain unchanged.
+- Verified all 2,880 records / 2,100 paths; all 1,960 paths on unchanged datasets are identical. A separate public-data replay reproduced 210/210 proposal paths. No extra objective training for these checks.

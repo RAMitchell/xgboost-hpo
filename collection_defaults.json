@@ -1,0 +1,6 @@
+{
+  "fit_cpu_seconds": 300,
+  "round_cap": 2000,
+  "early_stopping_rounds": 100,
+  "threads_per_fit": 1
+}

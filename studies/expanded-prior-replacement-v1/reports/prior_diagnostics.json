@@ -1,0 +1,212 @@
+[
+  {
+    "uid": "openml_1496_r0",
+    "problem_type": "binary",
+    "rank_spearman": 0.4439636462289745,
+    "normal_score_rmse": 0.890577964420495,
+    "coverage90": 0.9166666666666666
+  },
+  {
+    "uid": "openml_42734_r0",
+    "problem_type": "multiclass",
+    "rank_spearman": 0.23191806836679327,
+    "normal_score_rmse": 0.9670664853922502,
+    "coverage90": 0.8333333333333334
+  },
+  {
+    "uid": "openml_42688_r0",
+    "problem_type": "regression",
+    "rank_spearman": 0.24544221378187736,
+    "normal_score_rmse": 0.9637585638732377,
+    "coverage90": 0.8541666666666666
+  },
+  {
+    "uid": "openml_40701_r0",
+    "problem_type": "binary",
+    "rank_spearman": 0.5418882257189366,
+    "normal_score_rmse": 0.855492132430805,
+    "coverage90": 0.9270833333333334
+  },
+  {
+    "uid": "openml_42724_r0",
+    "problem_type": "regression",
+    "rank_spearman": 0.03967715680954964,
+    "normal_score_rmse": 1.0326370882726081,
+    "coverage90": 0.8125
+  },
+  {
+    "uid": "openml_750_r0",
+    "problem_type": "binary",
+    "rank_spearman": 0.3950895279435703,
+    "normal_score_rmse": 0.9101526209043248,
+    "coverage90": 0.8854166666666666
+  },
+  {
+    "uid": "openml_23_r0",
+    "problem_type": "multiclass",
+    "rank_spearman": 0.5484400434074878,
+    "normal_score_rmse": 0.8802513898325071,
+    "coverage90": 0.8854166666666666
+  },
+  {
+    "uid": "openml_201_r0",
+    "problem_type": "regression",
+    "rank_spearman": -0.012194791101465001,
+    "normal_score_rmse": 1.0487611701339667,
+    "coverage90": 0.7916666666666666
+  },
+  {
+    "uid": "openml_40536_r0",
+    "problem_type": "binary",
+    "rank_spearman": 0.24766684753119914,
+    "normal_score_rmse": 0.9598067649147755,
+    "coverage90": 0.8958333333333334
+  },
+  {
+    "uid": "openml_30_r0",
+    "problem_type": "multiclass",
+    "rank_spearman": 0.5113266413456321,
+    "normal_score_rmse": 0.8758077872020765,
+    "coverage90": 0.875
+  },
+  {
+    "uid": "openml_531_r0",
+    "problem_type": "regression",
+    "rank_spearman": 0.40419153553988063,
+    "normal_score_rmse": 0.8986041521884819,
+    "coverage90": 0.8958333333333334
+  },
+  {
+    "uid": "openml_949_r0",
+    "problem_type": "binary",
+    "rank_spearman": 0.3032779658097823,
+    "normal_score_rmse": 0.933167872035588,
+    "coverage90": 0.8854166666666666
+  },
+  {
+    "uid": "openml_1509_r0",
+    "problem_type": "multiclass",
+    "rank_spearman": 0.4718122626153011,
+    "normal_score_rmse": 0.8851648715498558,
+    "coverage90": 0.8541666666666666
+  },
+  {
+    "uid": "openml_1590_r0",
+    "problem_type": "binary",
+    "rank_spearman": 0.47624796527400975,
+    "normal_score_rmse": 0.8867409850554131,
+    "coverage90": 0.90625
+  },
+  {
+    "uid": "openml_1503_r0",
+    "problem_type": "multiclass",
+    "rank_spearman": 0.292810634834509,
+    "normal_score_rmse": 0.9576939118721441,
+    "coverage90": 0.8333333333333334
+  },
+  {
+    "uid": "openml_541_r0",
+    "problem_type": "regression",
+    "rank_spearman": 0.31995387954422133,
+    "normal_score_rmse": 0.9295040319168787,
+    "coverage90": 0.8854166666666666
+  },
+  {
+    "uid": "openml_981_r0",
+    "problem_type": "binary",
+    "rank_spearman": 0.4731958762886598,
+    "normal_score_rmse": 0.8907650594794785,
+    "coverage90": 0.84375
+  },
+  {
+    "uid": "openml_40975_r0",
+    "problem_type": "multiclass",
+    "rank_spearman": 0.4085594139989148,
+    "normal_score_rmse": 0.9013144074460138,
+    "coverage90": 0.8541666666666666
+  },
+  {
+    "uid": "openml_41145_r0",
+    "problem_type": "binary",
+    "rank_spearman": 0.19593054801953333,
+    "normal_score_rmse": 0.9817286099888966,
+    "coverage90": 0.8541666666666666
+  },
+  {
+    "uid": "openml_458_r0",
+    "problem_type": "multiclass",
+    "rank_spearman": 0.45378459034183394,
+    "normal_score_rmse": 0.8901953564546231,
+    "coverage90": 0.9166666666666666
+  },
+  {
+    "uid": "openml_23381_r0",
+    "problem_type": "binary",
+    "rank_spearman": 0.27329083016820405,
+    "normal_score_rmse": 0.9612868721521338,
+    "coverage90": 0.8541666666666666
+  },
+  {
+    "uid": "openml_28_r0",
+    "problem_type": "multiclass",
+    "rank_spearman": 0.5189907759088442,
+    "normal_score_rmse": 0.8586486240978206,
+    "coverage90": 0.90625
+  },
+  {
+    "uid": "openml_40704_r0",
+    "problem_type": "binary",
+    "rank_spearman": 0.3587628865979381,
+    "normal_score_rmse": 0.9245054111298564,
+    "coverage90": 0.8854166666666666
+  },
+  {
+    "uid": "openml_40985_r0",
+    "problem_type": "multiclass",
+    "rank_spearman": -0.010973955507325014,
+    "normal_score_rmse": 1.0472296275816189,
+    "coverage90": 0.8020833333333334
+  },
+  {
+    "uid": "openml_44_r0",
+    "problem_type": "binary",
+    "rank_spearman": 0.6445740640260444,
+    "normal_score_rmse": 0.8240202256355941,
+    "coverage90": 0.9166666666666666
+  },
+  {
+    "uid": "openml_40668_r0",
+    "problem_type": "multiclass",
+    "rank_spearman": 0.3456863809007054,
+    "normal_score_rmse": 0.9254986544657864,
+    "coverage90": 0.8645833333333334
+  },
+  {
+    "uid": "openml_23517_r0",
+    "problem_type": "binary",
+    "rank_spearman": 0.2555480195333695,
+    "normal_score_rmse": 0.956391661578868,
+    "coverage90": 0.8125
+  },
+  {
+    "uid": "openml_1468_r0",
+    "problem_type": "multiclass",
+    "rank_spearman": 0.5092783505154639,
+    "normal_score_rmse": 0.8691772328813004,
+    "coverage90": 0.9270833333333334
+  },
+  {
+    "uid": "openml_41144_r0",
+    "problem_type": "binary",
+    "rank_spearman": 0.1940992946283234,
+    "normal_score_rmse": 0.976259720182237,
+    "coverage90": 0.8333333333333334
+  },
+  {
+    "uid": "openml_12_r0",
+    "problem_type": "multiclass",
+    "rank_spearman": 0.5193841562669561,
+    "normal_score_rmse": 0.8633597945601529,
+    "coverage90": 0.9166666666666666
+  }
+]
