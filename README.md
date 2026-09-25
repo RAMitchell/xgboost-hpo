@@ -4,6 +4,12 @@ Research data and reproducible experiments for few-shot hyperparameter optimizat
 
 The aim is to learn useful search priors from historical evaluations, improve the first few proposals on a new dataset, and keep adapting as new observations arrive. This is an independent research repository, not an official XGBoost API.
 
+## Expanded-space prior comparison
+
+The next study trains a historical mean/variance/kernel prior from the first database and evaluates it on separate dataset families and 96 fresh configurations. It compares the GP with no-history and online-kernel GPs, SMAC, Optuna TPE, and random search.
+
+See the [study protocol and reproduction guide](studies/expanded-prior-v1/README.md) and [results](studies/expanded-prior-v1/reports/RESULTS.md). These are finite-pool optimizer comparisons, with validation objectives on held-out families; target test losses are not used.
+
 ## First database snapshot
 
 **50 OpenML datasets × 40 shared random configurations = 2,000 attempted XGBoost fits.**

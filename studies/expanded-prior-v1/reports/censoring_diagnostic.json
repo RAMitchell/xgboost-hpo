@@ -1,0 +1,30 @@
+[
+  {
+    "method": "gp_prior",
+    "dilbert_mean_capped_queries_first16": 12.7
+  },
+  {
+    "method": "gp_no_history",
+    "dilbert_mean_capped_queries_first16": 10.2
+  },
+  {
+    "method": "gp_prior_matched2",
+    "dilbert_mean_capped_queries_first16": 13.0
+  },
+  {
+    "method": "gp_ei_online",
+    "dilbert_mean_capped_queries_first16": 10.8
+  },
+  {
+    "method": "smac",
+    "dilbert_mean_capped_queries_first16": 9.8
+  },
+  {
+    "method": "tpe",
+    "dilbert_mean_capped_queries_first16": 10.8
+  },
+  {
+    "method": "random",
+    "dilbert_mean_capped_queries_first16": 11.5
+  }
+]

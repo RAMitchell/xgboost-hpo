@@ -1,0 +1,356 @@
+[
+  {
+    "did": 1496,
+    "dataset": "ringnorm",
+    "family": "openml-family:1496",
+    "problem_type": "binary"
+  },
+  {
+    "did": 42734,
+    "dataset": "okcupid-stem",
+    "family": "openml-family:42734",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 42688,
+    "dataset": "Brazilian_houses",
+    "family": "openml-family:42688",
+    "problem_type": "regression"
+  },
+  {
+    "did": 40701,
+    "dataset": "churn",
+    "family": "openml-family:40701",
+    "problem_type": "binary"
+  },
+  {
+    "did": 41167,
+    "dataset": "dionis",
+    "family": "openml-family:41167",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 42724,
+    "dataset": "OnlineNewsPopularity",
+    "family": "openml-family:42724",
+    "problem_type": "regression"
+  },
+  {
+    "did": 750,
+    "dataset": "pm10",
+    "family": "openml-family:750",
+    "problem_type": "binary"
+  },
+  {
+    "did": 23,
+    "dataset": "cmc",
+    "family": "openml-family:23",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 201,
+    "dataset": "pol",
+    "family": "openml-family:201",
+    "problem_type": "regression"
+  },
+  {
+    "did": 40536,
+    "dataset": "SpeedDating",
+    "family": "openml-family:40536",
+    "problem_type": "binary"
+  },
+  {
+    "did": 30,
+    "dataset": "page-blocks",
+    "family": "openml-family:30",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 531,
+    "dataset": "boston",
+    "family": "openml-family:531",
+    "problem_type": "regression"
+  },
+  {
+    "did": 949,
+    "dataset": "arsenic-female-bladder",
+    "family": "openml-family:949",
+    "problem_type": "binary"
+  },
+  {
+    "did": 1509,
+    "dataset": "walking-activity",
+    "family": "openml-family:1509",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 42705,
+    "dataset": "Yolanda",
+    "family": "openml-family:42705",
+    "problem_type": "regression"
+  },
+  {
+    "did": 1590,
+    "dataset": "adult",
+    "family": "openml-family:1590",
+    "problem_type": "binary"
+  },
+  {
+    "did": 1503,
+    "dataset": "spoken-arabic-digit",
+    "family": "openml-family:1503",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 541,
+    "dataset": "socmob",
+    "family": "openml-family:541",
+    "problem_type": "regression"
+  },
+  {
+    "did": 981,
+    "dataset": "kdd_internet_usage",
+    "family": "openml-family:981",
+    "problem_type": "binary"
+  },
+  {
+    "did": 554,
+    "dataset": "mnist_784",
+    "family": "openml-family:554",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 3050,
+    "dataset": "QSAR-TID-11",
+    "family": "openml-family:3050",
+    "problem_type": "regression"
+  },
+  {
+    "did": 1169,
+    "dataset": "airlines",
+    "family": "openml-family:1169",
+    "problem_type": "binary"
+  },
+  {
+    "did": 40975,
+    "dataset": "car",
+    "family": "openml-family:40975",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 41145,
+    "dataset": "philippine",
+    "family": "openml-family:41145",
+    "problem_type": "binary"
+  },
+  {
+    "did": 458,
+    "dataset": "analcatdata_authorship",
+    "family": "openml-family:458",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 23381,
+    "dataset": "dresses-sales",
+    "family": "openml-family:23381",
+    "problem_type": "binary"
+  },
+  {
+    "did": 28,
+    "dataset": "optdigits",
+    "family": "openml-family:28",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 40704,
+    "dataset": "Titanic",
+    "family": "openml-family:40704",
+    "problem_type": "binary"
+  },
+  {
+    "did": 41163,
+    "dataset": "dilbert",
+    "family": "openml-family:41163",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 44,
+    "dataset": "spambase",
+    "family": "openml-family:44",
+    "problem_type": "binary"
+  },
+  {
+    "did": 40668,
+    "dataset": "connect-4",
+    "family": "openml-family:40668",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 23517,
+    "dataset": "numerai28_6",
+    "family": "openml-family:23517",
+    "problem_type": "binary"
+  },
+  {
+    "did": 1468,
+    "dataset": "cnae-9",
+    "family": "openml-family:1468",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 41144,
+    "dataset": "madeline",
+    "family": "openml-family:41144",
+    "problem_type": "binary"
+  },
+  {
+    "did": 12,
+    "dataset": "mfeat-factors",
+    "family": "openml-family:12",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 41143,
+    "dataset": "jasmine",
+    "family": "openml-family:41143",
+    "problem_type": "binary"
+  },
+  {
+    "did": 40985,
+    "dataset": "tamilnadu-electricity",
+    "family": "openml-family:40985",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 1480,
+    "dataset": "ilpd",
+    "family": "openml-family:1480",
+    "problem_type": "binary"
+  },
+  {
+    "did": 181,
+    "dataset": "yeast",
+    "family": "openml-family:181",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 41158,
+    "dataset": "gina",
+    "family": "openml-family:1038",
+    "problem_type": "binary"
+  },
+  {
+    "did": 1483,
+    "dataset": "ldpa",
+    "family": "openml-family:1483",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 4534,
+    "dataset": "PhishingWebsites",
+    "family": "openml-family:4534",
+    "problem_type": "binary"
+  },
+  {
+    "did": 41972,
+    "dataset": "Indian_pines",
+    "family": "openml-family:41972",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 41157,
+    "dataset": "arcene",
+    "family": "openml-family:41157",
+    "problem_type": "binary"
+  },
+  {
+    "did": 182,
+    "dataset": "satimage",
+    "family": "openml-family:182",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 40706,
+    "dataset": "parity5_plus_5",
+    "family": "openml-family:40706",
+    "problem_type": "binary"
+  },
+  {
+    "did": 1515,
+    "dataset": "micro-mass",
+    "family": "openml-family:1515",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 40981,
+    "dataset": "Australian",
+    "family": "openml-family:40981",
+    "problem_type": "binary"
+  },
+  {
+    "did": 40971,
+    "dataset": "collins",
+    "family": "openml-family:40971",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 41146,
+    "dataset": "sylvine",
+    "family": "openml-family:1036",
+    "problem_type": "binary"
+  },
+  {
+    "did": 46,
+    "dataset": "splice",
+    "family": "openml-family:46",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 1487,
+    "dataset": "ozone-level-8hr",
+    "family": "openml-family:1487",
+    "problem_type": "binary"
+  },
+  {
+    "did": 155,
+    "dataset": "pokerhand",
+    "family": "openml-family:155",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 1111,
+    "dataset": "KDDCup09_appetency",
+    "family": "openml-family:1111",
+    "problem_type": "binary"
+  },
+  {
+    "did": 41982,
+    "dataset": "Kuzushiji-MNIST",
+    "family": "openml-family:41982",
+    "problem_type": "multiclass"
+  },
+  {
+    "did": 717,
+    "dataset": "rmftsa_ladata",
+    "family": "openml-family:717",
+    "problem_type": "binary"
+  },
+  {
+    "did": 40900,
+    "dataset": "Satellite",
+    "family": "openml-family:40900",
+    "problem_type": "binary"
+  },
+  {
+    "did": 41150,
+    "dataset": "MiniBooNE",
+    "family": "openml-family:41150",
+    "problem_type": "binary"
+  },
+  {
+    "did": 40705,
+    "dataset": "tokyo1",
+    "family": "openml-family:40705",
+    "problem_type": "binary"
+  }
+]

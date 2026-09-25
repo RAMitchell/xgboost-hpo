@@ -1,0 +1,7 @@
+{
+  "trajectories": 2100,
+  "queries": 67200,
+  "wall_seconds": 19.014337970060296,
+  "cpu_seconds": 279.7887012000001,
+  "fresh_objective_fits": 0
+}

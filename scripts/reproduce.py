@@ -80,15 +80,18 @@ def worker(job):
 
 
 def main():
+    global DATA
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--snapshot', type=Path, default=DATA, help='Packaged snapshot directory')
     parser.add_argument('--dataset-id', type=int, action='append', help='Repeat for multiple OpenML IDs')
-    parser.add_argument('--all', action='store_true', help='Explicitly rerun all 50 datasets')
-    parser.add_argument('--config-id', action='append', help='Default: all 40 configurations')
+    parser.add_argument('--all', action='store_true', help='Explicitly rerun every dataset in the snapshot')
+    parser.add_argument('--config-id', action='append', help='Default: all configurations in the snapshot')
     parser.add_argument('--workers', type=int, default=1, help='Concurrent one-thread fits')
     parser.add_argument('--output', type=Path, default=ROOT / 'runs/reproduction')
     parser.add_argument('--cache', type=Path, default=ROOT / 'runs/openml-cache')
     parser.add_argument('--prepare-only', action='store_true')
     args = parser.parse_args()
+    DATA = args.snapshot.resolve()
     if args.workers < 1:
         parser.error('--workers must be positive')
     if bool(args.dataset_id) == args.all:

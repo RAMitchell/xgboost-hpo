@@ -12,3 +12,4 @@ jobs:
       - run: python scripts/verify.py
       - run: python examples/read_database.py
       - run: python examples/ask_tell.py
+      - run: python studies/expanded-prior-v1/verify_artifacts.py

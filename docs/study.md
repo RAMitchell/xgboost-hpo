@@ -1,5 +1,11 @@
 # Study state and handoff
 
+## Latest completed study
+
+The expanded-space prior has now been trained and evaluated: see [the study](../studies/expanded-prior-v1/README.md) and [interpretation](../studies/expanded-prior-v1/reports/INTERPRETATION.md). The 30-family comparison shows useful early transfer on the 28 complete candidate pools but no robust overall advantage when time-capped fits are penalized. All 2,880 objective evaluations and 2,100 replay paths are preserved. Prior fitting, projection, replay, and reporting scripts are now portable. No experiment remains running.
+
+The material below records the context and plan preceding that completed study; proposed steps 1–4 have now been performed in expanded-prior-v1. The next priority is explicitly testing failure/cost handling while preserving this result.
+
 ## Research objective
 
 Build a practical few-shot XGBoost hyperparameter optimizer using compact historical information and modest dependencies. Optimize validation regret against evaluation budget, while tracking actual compute cost and avoiding a heavily tuned optimizer whose own configuration becomes another HPO problem.

@@ -1,0 +1,8 @@
+{
+  "kernel_gradient_max_error": 2.172304032557748e-07,
+  "effective_encoding_invariant": true,
+  "all_baseline_synthetic_checks_pass": true,
+  "source_target_families_disjoint": true,
+  "source_target_configurations_disjoint": true,
+  "target_outcomes_read": 0
+}

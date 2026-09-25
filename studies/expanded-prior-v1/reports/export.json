@@ -1,0 +1,9 @@
+{
+  "datasets": 30,
+  "evaluations": 2880,
+  "curves": 2880,
+  "trajectories": 2100,
+  "bytes": 122559432,
+  "model_binaries_included": false,
+  "raw_tables_included": false
+}

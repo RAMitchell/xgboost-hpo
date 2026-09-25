@@ -1,0 +1,312 @@
+[
+  {
+    "did": 1496,
+    "dataset": "ringnorm",
+    "family": "openml-family:1496",
+    "problem_type": "binary",
+    "status": "admitted",
+    "rows": 7400,
+    "features": 20
+  },
+  {
+    "did": 42734,
+    "dataset": "okcupid-stem",
+    "family": "openml-family:42734",
+    "problem_type": "multiclass",
+    "status": "admitted",
+    "rows": 20000,
+    "features": 19
+  },
+  {
+    "did": 42688,
+    "dataset": "Brazilian_houses",
+    "family": "openml-family:42688",
+    "problem_type": "regression",
+    "status": "admitted",
+    "rows": 10692,
+    "features": 12
+  },
+  {
+    "did": 40701,
+    "dataset": "churn",
+    "family": "openml-family:40701",
+    "problem_type": "binary",
+    "status": "admitted",
+    "rows": 5000,
+    "features": 20
+  },
+  {
+    "did": 41167,
+    "dataset": "dionis",
+    "family": "openml-family:41167",
+    "problem_type": "multiclass",
+    "status": "excluded",
+    "error": "ValueError('more than50classes')"
+  },
+  {
+    "did": 42724,
+    "dataset": "OnlineNewsPopularity",
+    "family": "openml-family:42724",
+    "problem_type": "regression",
+    "status": "admitted",
+    "rows": 20000,
+    "features": 59
+  },
+  {
+    "did": 750,
+    "dataset": "pm10",
+    "family": "openml-family:750",
+    "problem_type": "binary",
+    "status": "admitted",
+    "rows": 500,
+    "features": 7
+  },
+  {
+    "did": 23,
+    "dataset": "cmc",
+    "family": "openml-family:23",
+    "problem_type": "multiclass",
+    "status": "admitted",
+    "rows": 1473,
+    "features": 9
+  },
+  {
+    "did": 201,
+    "dataset": "pol",
+    "family": "openml-family:201",
+    "problem_type": "regression",
+    "status": "admitted",
+    "rows": 15000,
+    "features": 48
+  },
+  {
+    "did": 40536,
+    "dataset": "SpeedDating",
+    "family": "openml-family:40536",
+    "problem_type": "binary",
+    "status": "admitted",
+    "rows": 8378,
+    "features": 120
+  },
+  {
+    "did": 30,
+    "dataset": "page-blocks",
+    "family": "openml-family:30",
+    "problem_type": "multiclass",
+    "status": "admitted",
+    "rows": 5473,
+    "features": 10
+  },
+  {
+    "did": 531,
+    "dataset": "boston",
+    "family": "openml-family:531",
+    "problem_type": "regression",
+    "status": "admitted",
+    "rows": 506,
+    "features": 13
+  },
+  {
+    "did": 949,
+    "dataset": "arsenic-female-bladder",
+    "family": "openml-family:949",
+    "problem_type": "binary",
+    "status": "admitted",
+    "rows": 559,
+    "features": 4
+  },
+  {
+    "did": 1509,
+    "dataset": "walking-activity",
+    "family": "openml-family:1509",
+    "problem_type": "multiclass",
+    "status": "admitted",
+    "rows": 20000,
+    "features": 4
+  },
+  {
+    "did": 42705,
+    "dataset": "Yolanda",
+    "family": "openml-family:42705",
+    "problem_type": "regression",
+    "status": "excluded",
+    "error": "ValueError('metadata resource admission: rows=400000, features=100')"
+  },
+  {
+    "did": 1590,
+    "dataset": "adult",
+    "family": "openml-family:1590",
+    "problem_type": "binary",
+    "status": "admitted",
+    "rows": 20000,
+    "features": 14
+  },
+  {
+    "did": 1503,
+    "dataset": "spoken-arabic-digit",
+    "family": "openml-family:1503",
+    "problem_type": "multiclass",
+    "status": "admitted",
+    "rows": 20000,
+    "features": 14
+  },
+  {
+    "did": 541,
+    "dataset": "socmob",
+    "family": "openml-family:541",
+    "problem_type": "regression",
+    "status": "admitted",
+    "rows": 1156,
+    "features": 5
+  },
+  {
+    "did": 981,
+    "dataset": "kdd_internet_usage",
+    "family": "openml-family:981",
+    "problem_type": "binary",
+    "status": "admitted",
+    "rows": 10108,
+    "features": 68
+  },
+  {
+    "did": 554,
+    "dataset": "mnist_784",
+    "family": "openml-family:554",
+    "problem_type": "multiclass",
+    "status": "excluded",
+    "error": "ValueError('metadata resource admission: rows=70000, features=784')"
+  },
+  {
+    "did": 3050,
+    "dataset": "QSAR-TID-11",
+    "family": "openml-family:3050",
+    "problem_type": "regression",
+    "status": "excluded",
+    "error": "ValueError(\"Sparse ARFF datasets cannot be loaded with as_frame=True. Use as_frame=False or as_frame='auto' instead.\")"
+  },
+  {
+    "did": 1169,
+    "dataset": "airlines",
+    "family": "openml-family:1169",
+    "problem_type": "binary",
+    "status": "excluded",
+    "error": "ValueError('metadata resource admission: rows=539383, features=7')"
+  },
+  {
+    "did": 40975,
+    "dataset": "car",
+    "family": "openml-family:40975",
+    "problem_type": "multiclass",
+    "status": "admitted",
+    "rows": 1728,
+    "features": 6
+  },
+  {
+    "did": 41145,
+    "dataset": "philippine",
+    "family": "openml-family:41145",
+    "problem_type": "binary",
+    "status": "admitted",
+    "rows": 5832,
+    "features": 308
+  },
+  {
+    "did": 458,
+    "dataset": "analcatdata_authorship",
+    "family": "openml-family:458",
+    "problem_type": "multiclass",
+    "status": "admitted",
+    "rows": 841,
+    "features": 70
+  },
+  {
+    "did": 23381,
+    "dataset": "dresses-sales",
+    "family": "openml-family:23381",
+    "problem_type": "binary",
+    "status": "admitted",
+    "rows": 500,
+    "features": 12
+  },
+  {
+    "did": 28,
+    "dataset": "optdigits",
+    "family": "openml-family:28",
+    "problem_type": "multiclass",
+    "status": "admitted",
+    "rows": 5620,
+    "features": 64
+  },
+  {
+    "did": 40704,
+    "dataset": "Titanic",
+    "family": "openml-family:40704",
+    "problem_type": "binary",
+    "status": "admitted",
+    "rows": 2201,
+    "features": 3
+  },
+  {
+    "did": 41163,
+    "dataset": "dilbert",
+    "family": "openml-family:41163",
+    "problem_type": "multiclass",
+    "status": "admitted",
+    "rows": 2000,
+    "features": 2000
+  },
+  {
+    "did": 44,
+    "dataset": "spambase",
+    "family": "openml-family:44",
+    "problem_type": "binary",
+    "status": "admitted",
+    "rows": 4601,
+    "features": 57
+  },
+  {
+    "did": 40668,
+    "dataset": "connect-4",
+    "family": "openml-family:40668",
+    "problem_type": "multiclass",
+    "status": "admitted",
+    "rows": 20000,
+    "features": 42
+  },
+  {
+    "did": 23517,
+    "dataset": "numerai28_6",
+    "family": "openml-family:23517",
+    "problem_type": "binary",
+    "status": "admitted",
+    "rows": 20000,
+    "features": 21
+  },
+  {
+    "did": 1468,
+    "dataset": "cnae-9",
+    "family": "openml-family:1468",
+    "problem_type": "multiclass",
+    "status": "admitted",
+    "rows": 1080,
+    "features": 856
+  },
+  {
+    "did": 41144,
+    "dataset": "madeline",
+    "family": "openml-family:41144",
+    "problem_type": "binary",
+    "status": "admitted",
+    "rows": 3140,
+    "features": 259
+  },
+  {
+    "did": 12,
+    "dataset": "mfeat-factors",
+    "family": "openml-family:12",
+    "problem_type": "multiclass",
+    "status": "admitted",
+    "rows": 2000,
+    "features": 216
+  }
+]

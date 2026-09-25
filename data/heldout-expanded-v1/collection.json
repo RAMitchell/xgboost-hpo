@@ -1,0 +1,15 @@
+{
+  "identity": "bab6051d8e3d514637fe5c284ef74a2c4c45215007c9121deb98379176c68127",
+  "datasets": 30,
+  "attempted": 2880,
+  "counts": {
+    "complete": 2812,
+    "censored": 68,
+    "failed": 0
+  },
+  "round_cap": 289,
+  "wall_seconds": 1407.6183601550292,
+  "job_cpu_seconds": 18566.064755818996,
+  "training_cpu_seconds": 17895.256404631,
+  "workers": 16
+}

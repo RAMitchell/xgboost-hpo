@@ -1,0 +1,5 @@
+{
+  "censored": 68,
+  "stale_reported_best_iteration": 49,
+  "explanation": "Guard stops can leave reported_best_iteration behind the observed curve minimum; portable collector selected the finite curve argmin and retained censored status."
+}

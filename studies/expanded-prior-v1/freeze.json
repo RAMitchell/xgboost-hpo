@@ -1,0 +1,31 @@
+{
+  "identity": "bab6051d8e3d514637fe5c284ef74a2c4c45215007c9121deb98379176c68127",
+  "hashes": {
+    "studies/expanded-prior-v1/common.py": "824d871805833f789050121037524b97b79ca6f6baeeab6cd8ba441bdd439340",
+    "studies/expanded-prior-v1/freeze.py": "78c0d47746107004d63e5d3ee0434bf78b7d721da467d8d893689d3b32aa68c0",
+    "studies/expanded-prior-v1/prepare_targets.py": "cb3a4070136045bf0be03b22a9b243d474ebae463e1c1a2c30eec3ffe3d43930",
+    "studies/expanded-prior-v1/checks.py": "d7ef805c12d0ff9ae11c3f60212d87d48e7d8d512c0fea9d7c33502ff1b0d59e",
+    "studies/expanded-prior-v1/collect.py": "31ec52989f2217ebbc87a6dcddbe0b6a881aa6839b491922c6224e8fab86903f",
+    "studies/expanded-prior-v1/fit_prior.py": "a0bf0464a3508e4912c6ca2f4d3caad4f30bc64b65ca0d6b50e0197d9139cc4d",
+    "studies/expanded-prior-v1/baselines.py": "34041d4256cce0260fd36b1dbe564cc8f60f7befc78b87424c9861cd8693b89b",
+    "studies/expanded-prior-v1/replay.py": "d6f5b4f46de130499e5ebe131bcf5766de765722c7fbabf2649ba6a0634d3146",
+    "studies/expanded-prior-v1/environment.json": "ed914ee78fbc57c94a36ff7d3f31b7cff97cdf788cb09bd181c151dc6313c17b",
+    "studies/expanded-prior-v1/configurations.json": "04d7c7d3d8bcbe93036887f0c959ffa55fbe8a8b63980cafcd1b39895884a9f5",
+    "studies/expanded-prior-v1/design.json": "2fe0f83dbe8a9bf6ccc400d3a2c36f7383394881a4cdfc868a941c2552f859f8",
+    "studies/expanded-prior-v1/candidates.json": "9b85d54ae3c4baaab76a3e042142d6ced266547c39a72dfa4d4465aeda62b0c7",
+    "studies/expanded-prior-v1/checks.json": "8fe11477fd667de48ac2759588f10f582ed086fb706686c39f5a09e3de278db8",
+    "studies/expanded-prior-v1/prior/model.json": "99af94f24063f7a0ce4456a17ad15802119815ce342bcf5d41f28de4dff1d880",
+    "studies/expanded-prior-v1/prior/scale.ubj": "261d9525eb79e77ca863a98f7fb273b9a8dda96216dbc67f25727c4d5bf00b52",
+    "studies/expanded-prior-v1/prior/mean.ubj": "fc0addedea603bba598b2ff1e0e96c285e93fb0f70db1082b905a7f1793e4a66",
+    "studies/expanded-prior-v1/prior/candidate_prior.npz": "198d1075bde24b898c7a6f8ff527170542ee4e319b8ded7f1e3717b7a0c9c017",
+    "studies/expanded-prior-v1/PROTOCOL.md": "6c574a0532f99894e9dab003ebc1276f0d36d96e09208c0f68f85117f8bd03ff",
+    "scripts/collector.py": "f974ee58350dc2fcf65b071e30105f87c9624fd877bee312bf6d2799067fdb25",
+    "scripts/configuration_mapping.py": "f5f9d9aa5b27b02802bb5c672c90a03150fa93979d63d040ebcd5a2e61f941e8",
+    "examples/quantile_gp_numpy.py": "b272793ce2e19d04b3216ed652b0605b739626ca6d934ee004a28eb4e9b52439",
+    "data/collection-2026-09-25/manifest.json": "a2f528458c64115c65e109fc205357527ba173899941ef3707e017460e7b933f",
+    "data/collection-2026-09-25/evaluations.parquet": "2438c37fbdfd74a1ac97ca907f7f401d4290196e2daedfcc38d61b1a9b0605ff",
+    "data/collection-2026-09-25/datasets.json": "8c11597817d8dbf6780a1ed32c21f926604e919ed18a586b7b275efb496df8ca",
+    "data/collection-2026-09-25/configurations.json": "8ff8d90a64271fcd025c23268ce3786b54bbeab1a2c921549ddccb1249e6a029"
+  },
+  "target_outcomes_read": 0
+}
