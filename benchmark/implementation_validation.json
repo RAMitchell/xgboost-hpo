@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-28",
+  "prior_models_byte_identical": {
+    "mean.ubj": true,
+    "scale.ubj": true
+  },
+  "prior_parameter_max_differences": {
+    "mean_training_predictions": 0.0,
+    "scale_training_predictions": 0.0,
+    "logtheta": 0.0
+  },
+  "source_records": 2000,
+  "successful_source_records": 1999,
+  "source_families": 50,
+  "heldout_families": 30,
+  "implementation_replay_paths": 300,
+  "implementation_replay_decisions": 9600,
+  "implementation_replay_mismatches": 0,
+  "api_and_package_tests_passed": 48,
+  "clean_cpu_build": true,
+  "mypy_passed": true,
+  "ruff_passed": true,
+  "benchmark_objective_fits": 0,
+  "implementation_commit": "de17d35e8",
+  "note": "Synthetic objective fits used only in API tests and the runnable example; no benchmark objectives retrained. Prior identity verified with historical study library, policy replay with the new clean source build."
+}

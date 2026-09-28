@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "encoding": "xgboost-hpo-v1",
+  "parameters": {
+    "learning_rate": [
+      0.01,
+      0.3
+    ],
+    "max_depth": [
+      0,
+      2,
+      12
+    ],
+    "max_leaves": [
+      0,
+      8,
+      256
+    ],
+    "grow_policy": [
+      "depthwise",
+      "lossguide"
+    ],
+    "min_child_weight": [
+      1e-05,
+      100
+    ],
+    "subsample": [
+      0.5,
+      1
+    ],
+    "colsample_bytree": [
+      0.5,
+      1
+    ],
+    "colsample_bylevel": [
+      0.5,
+      1
+    ],
+    "colsample_bynode": [
+      0.5,
+      1
+    ],
+    "reg_lambda": [
+      0,
+      1e-05,
+      100
+    ],
+    "reg_alpha": [
+      0,
+      1e-05,
+      10
+    ],
+    "gamma": [
+      0,
+      1e-05,
+      10
+    ],
+    "max_bin": [
+      128,
+      256,
+      512
+    ]
+  },
+  "constraints": [
+    "max_depth and max_leaves cannot both be zero",
+    "At most one colsample parameter may be below one",
+    "max_depth/max_leaves are integers; zero means inactive; positive ranges start at 2/8",
+    "Regularization is zero or within the positive interval"
+  ],
+  "training_regime": "CPU hist, unweighted logloss/mlogloss or RMSE; training-selected intercept; early stopping; no test-loss input"
+}

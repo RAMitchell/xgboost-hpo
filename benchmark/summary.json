@@ -1,0 +1,799 @@
+{
+  "datasets": 30,
+  "configuration_pool": 96,
+  "budget": 32,
+  "optimizer_seeds": 10,
+  "methods": [
+    {
+      "method": "gp_prior",
+      "label": "GP + historical prior",
+      "area1_16": 0.06189198020628618,
+      "area95": [
+        0.04699697734253638,
+        0.07835751893949308
+      ],
+      "optimizer_cpu_seconds_mean": 0.011107579503333352,
+      "objective_cpu_at32_mean": 111.80018222166332,
+      "noncomplete_queries_mean": 0.0,
+      "regret2": 0.12367976446201635,
+      "regret4": 0.0784874815449355,
+      "regret8": 0.04544122201800555,
+      "regret16": 0.028743571913229925,
+      "regret32": 0.014569293653502857
+    },
+    {
+      "method": "gp_no_history",
+      "label": "GP without history",
+      "area1_16": 0.07321153756872882,
+      "area95": [
+        0.05628587651591282,
+        0.0909763359329904
+      ],
+      "optimizer_cpu_seconds_mean": 0.012359995626666691,
+      "objective_cpu_at32_mean": 106.14256339599329,
+      "noncomplete_queries_mean": 0.0,
+      "regret2": 0.14172784746911243,
+      "regret4": 0.09258667156041815,
+      "regret8": 0.0569200119908923,
+      "regret16": 0.03201385968970797,
+      "regret32": 0.016275007048399695
+    },
+    {
+      "method": "gp_prior_matched2",
+      "label": "GP + prior, matched starts",
+      "area1_16": 0.06797802587219405,
+      "area95": [
+        0.05201673188804905,
+        0.08518073877321848
+      ],
+      "optimizer_cpu_seconds_mean": 0.011407656593333405,
+      "objective_cpu_at32_mean": 114.08427460948997,
+      "noncomplete_queries_mean": 0.0,
+      "regret2": 0.14069631336690427,
+      "regret4": 0.08149601770992887,
+      "regret8": 0.049649658584400985,
+      "regret16": 0.031605949493344575,
+      "regret32": 0.01613168179970861
+    },
+    {
+      "method": "gp_ei_online",
+      "label": "GP-EI, online kernel",
+      "area1_16": 0.07729313218869677,
+      "area95": [
+        0.06047495935986747,
+        0.09480291103332619
+      ],
+      "optimizer_cpu_seconds_mean": 0.6518928709733334,
+      "objective_cpu_at32_mean": 98.22496051125663,
+      "noncomplete_queries_mean": 0.0,
+      "regret2": 0.14069631336690427,
+      "regret4": 0.09825687594262743,
+      "regret8": 0.06292402370765983,
+      "regret16": 0.035361702033102765,
+      "regret32": 0.014378825617062102
+    },
+    {
+      "method": "smac",
+      "label": "SMAC (pool)",
+      "area1_16": 0.0804981196170198,
+      "area95": [
+        0.06242286943082271,
+        0.0994669695408575
+      ],
+      "optimizer_cpu_seconds_mean": 0.17775722761333332,
+      "objective_cpu_at32_mean": 102.06578170132998,
+      "noncomplete_queries_mean": 0.0,
+      "regret2": 0.14069631336690427,
+      "regret4": 0.09825687594262743,
+      "regret8": 0.06907346821520163,
+      "regret16": 0.0357429058835349,
+      "regret32": 0.01090183836233306
+    },
+    {
+      "method": "tpe",
+      "label": "Optuna TPE (pool)",
+      "area1_16": 0.08046465505441545,
+      "area95": [
+        0.062171258143397856,
+        0.09974195913255512
+      ],
+      "optimizer_cpu_seconds_mean": 0.10526434439666668,
+      "objective_cpu_at32_mean": 93.99512890501994,
+      "noncomplete_queries_mean": 0.0,
+      "regret2": 0.14069631336690427,
+      "regret4": 0.09825687594262743,
+      "regret8": 0.06907346821520163,
+      "regret16": 0.0370313007414884,
+      "regret32": 0.016622514543944863
+    },
+    {
+      "method": "random",
+      "label": "Random",
+      "area1_16": 0.07470230871631856,
+      "area95": [
+        0.05787677169374312,
+        0.09209226393685063
+      ],
+      "optimizer_cpu_seconds_mean": 0.003492740773333356,
+      "objective_cpu_at32_mean": 94.73948239736995,
+      "noncomplete_queries_mean": 0.0,
+      "regret2": 0.14251404442153903,
+      "regret4": 0.09094785822643926,
+      "regret8": 0.058186658689946755,
+      "regret16": 0.03722034821159211,
+      "regret32": 0.021476813173704243
+    }
+  ],
+  "comparisons": [
+    {
+      "comparator": "gp_no_history",
+      "prior_minus_comparator": -0.011319557362442646,
+      "difference95": [
+        -0.02058364765251853,
+        -0.003053332875164856
+      ],
+      "relative_percent": -15.46143919162493,
+      "relative95": [
+        -26.340344035041667,
+        -4.636359962346788
+      ],
+      "paired_signflip_p": 0.016849157542122895,
+      "prior_wins": 22,
+      "ties": 0,
+      "prior_losses": 8,
+      "holm_p": 0.048897555122243884
+    },
+    {
+      "comparator": "gp_prior_matched2",
+      "prior_minus_comparator": -0.006086045665907874,
+      "difference95": [
+        -0.010669400133302018,
+        -0.0016828519091235357
+      ],
+      "relative_percent": -8.952960295361166,
+      "relative95": [
+        -15.403904248203927,
+        -2.557295850274663
+      ],
+      "paired_signflip_p": 0.01629918504074796,
+      "prior_wins": 20,
+      "ties": 0,
+      "prior_losses": 10,
+      "holm_p": 0.048897555122243884
+    },
+    {
+      "comparator": "gp_ei_online",
+      "prior_minus_comparator": -0.015401151982410568,
+      "difference95": [
+        -0.026281573320725775,
+        -0.005501010167901984
+      ],
+      "relative_percent": -19.925640928629374,
+      "relative95": [
+        -31.824248931822616,
+        -7.743391042123893
+      ],
+      "paired_signflip_p": 0.004649767511624419,
+      "prior_wins": 20,
+      "ties": 0,
+      "prior_losses": 10,
+      "holm_p": 0.018599070046497676
+    },
+    {
+      "comparator": "smac",
+      "prior_minus_comparator": -0.018606139410733646,
+      "difference95": [
+        -0.030844088335829644,
+        -0.007495762325544999
+      ],
+      "relative_percent": -23.11375656879286,
+      "relative95": [
+        -35.31130670811408,
+        -10.309863963454266
+      ],
+      "paired_signflip_p": 0.0016999150042497876,
+      "prior_wins": 21,
+      "ties": 0,
+      "prior_losses": 9,
+      "holm_p": 0.010199490025498725
+    },
+    {
+      "comparator": "tpe",
+      "prior_minus_comparator": -0.01857267484812928,
+      "difference95": [
+        -0.0307737042196503,
+        -0.007513298897940203
+      ],
+      "relative_percent": -23.081780237011177,
+      "relative95": [
+        -35.105681578747806,
+        -10.437062423474998
+      ],
+      "paired_signflip_p": 0.0023998800059997,
+      "prior_wins": 20,
+      "ties": 0,
+      "prior_losses": 10,
+      "holm_p": 0.0119994000299985
+    },
+    {
+      "comparator": "random",
+      "prior_minus_comparator": -0.01281032851003238,
+      "difference95": [
+        -0.023886720754143113,
+        -0.002799723515972534
+      ],
+      "relative_percent": -17.14850414955648,
+      "relative95": [
+        -29.771925568404694,
+        -4.087398351911862
+      ],
+      "paired_signflip_p": 0.023248837558122095,
+      "prior_wins": 19,
+      "ties": 0,
+      "prior_losses": 11,
+      "holm_p": 0.048897555122243884
+    }
+  ],
+  "strata": [
+    {
+      "stratum": "classification",
+      "datasets": 25,
+      "method": "gp_prior",
+      "area1_16": 0.060305352764092116,
+      "regret16": 0.026999360634733547,
+      "regret32": 0.01352267549967252
+    },
+    {
+      "stratum": "classification",
+      "datasets": 25,
+      "method": "gp_no_history",
+      "area1_16": 0.07124829277476424,
+      "regret16": 0.0319622884581807,
+      "regret32": 0.015262879495667432
+    },
+    {
+      "stratum": "classification",
+      "datasets": 25,
+      "method": "gp_prior_matched2",
+      "area1_16": 0.06630860110138843,
+      "regret16": 0.03100758226556406,
+      "regret32": 0.015088585277090432
+    },
+    {
+      "stratum": "classification",
+      "datasets": 25,
+      "method": "gp_ei_online",
+      "area1_16": 0.07568833018663822,
+      "regret16": 0.03488534008445101,
+      "regret32": 0.014080476338046542
+    },
+    {
+      "stratum": "classification",
+      "datasets": 25,
+      "method": "smac",
+      "area1_16": 0.07835874932334919,
+      "regret16": 0.03357900129212811,
+      "regret32": 0.009429259957778113
+    },
+    {
+      "stratum": "classification",
+      "datasets": 25,
+      "method": "tpe",
+      "area1_16": 0.07837025069772889,
+      "regret16": 0.03507076659898403,
+      "regret32": 0.01673063835103805
+    },
+    {
+      "stratum": "classification",
+      "datasets": 25,
+      "method": "random",
+      "area1_16": 0.07383819269918405,
+      "regret16": 0.03721703156696683,
+      "regret32": 0.021696582170975948
+    },
+    {
+      "stratum": "regression",
+      "datasets": 5,
+      "method": "gp_prior",
+      "area1_16": 0.06982511741725647,
+      "regret16": 0.037464628305711775,
+      "regret32": 0.019802384422654536
+    },
+    {
+      "stratum": "regression",
+      "datasets": 5,
+      "method": "gp_no_history",
+      "area1_16": 0.08302776153855176,
+      "regret16": 0.032271715847344264,
+      "regret32": 0.021335644812061006
+    },
+    {
+      "stratum": "regression",
+      "datasets": 5,
+      "method": "gp_prior_matched2",
+      "area1_16": 0.07632514972622217,
+      "regret16": 0.03459778563224719,
+      "regret32": 0.021347164412799526
+    },
+    {
+      "stratum": "regression",
+      "datasets": 5,
+      "method": "gp_ei_online",
+      "area1_16": 0.0853171421989894,
+      "regret16": 0.03774351177636156,
+      "regret32": 0.015870572012139907
+    },
+    {
+      "stratum": "regression",
+      "datasets": 5,
+      "method": "smac",
+      "area1_16": 0.09119497108537303,
+      "regret16": 0.04656242884056887,
+      "regret32": 0.01826473038510778
+    },
+    {
+      "stratum": "regression",
+      "datasets": 5,
+      "method": "tpe",
+      "area1_16": 0.09093667683784823,
+      "regret16": 0.046833971454010255,
+      "regret32": 0.01608189550847895
+    },
+    {
+      "stratum": "regression",
+      "datasets": 5,
+      "method": "random",
+      "area1_16": 0.07902288880199107,
+      "regret16": 0.037236931434718505,
+      "regret32": 0.02037796818734571
+    }
+  ],
+  "sensitivity": [
+    {
+      "method": "gp_prior",
+      "complete_pool_datasets": 30,
+      "complete_pool_area": 0.06189198020628618,
+      "median_scaled_datasets": 30,
+      "median_scaled_area": 0.3529365257277791,
+      "prior_relative_percent": 0.0,
+      "prior_relative95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "method": "gp_no_history",
+      "complete_pool_datasets": 30,
+      "complete_pool_area": 0.07321153756872882,
+      "median_scaled_datasets": 30,
+      "median_scaled_area": 0.4050288071414342,
+      "prior_relative_percent": -15.46143919162493,
+      "prior_relative95": [
+        -26.032382648459663,
+        -4.596481281897381
+      ]
+    },
+    {
+      "method": "gp_prior_matched2",
+      "complete_pool_datasets": 30,
+      "complete_pool_area": 0.06797802587219405,
+      "median_scaled_datasets": 30,
+      "median_scaled_area": 0.38195973420071994,
+      "prior_relative_percent": -8.952960295361166,
+      "prior_relative95": [
+        -15.357195463041904,
+        -2.5317001695793535
+      ]
+    },
+    {
+      "method": "gp_ei_online",
+      "complete_pool_datasets": 30,
+      "complete_pool_area": 0.07729313218869677,
+      "median_scaled_datasets": 30,
+      "median_scaled_area": 0.43362313651767376,
+      "prior_relative_percent": -19.925640928629374,
+      "prior_relative95": [
+        -31.75671380108413,
+        -7.944285155719406
+      ]
+    },
+    {
+      "method": "smac",
+      "complete_pool_datasets": 30,
+      "complete_pool_area": 0.0804981196170198,
+      "median_scaled_datasets": 30,
+      "median_scaled_area": 0.43887844110185553,
+      "prior_relative_percent": -23.11375656879286,
+      "prior_relative95": [
+        -35.11735027074052,
+        -10.684424117772929
+      ]
+    },
+    {
+      "method": "tpe",
+      "complete_pool_datasets": 30,
+      "complete_pool_area": 0.08046465505441545,
+      "median_scaled_datasets": 30,
+      "median_scaled_area": 0.43788231247397463,
+      "prior_relative_percent": -23.081780237011177,
+      "prior_relative95": [
+        -35.07658056471276,
+        -10.638790306070256
+      ]
+    },
+    {
+      "method": "random",
+      "complete_pool_datasets": 30,
+      "complete_pool_area": 0.07470230871631856,
+      "median_scaled_datasets": 30,
+      "median_scaled_area": 0.41512301907748156,
+      "prior_relative_percent": -17.14850414955648,
+      "prior_relative95": [
+        -29.366219642957734,
+        -4.2110608035191675
+      ]
+    }
+  ],
+  "collection": {
+    "identity": "e19e0719c3c8554ce6348a2f7f2fa5950e4bd7d315c938b6a0276f1dadde1e2e",
+    "parent_identity": "bab6051d8e3d514637fe5c284ef74a2c4c45215007c9121deb98379176c68127",
+    "datasets": 30,
+    "attempted": 2880,
+    "reused": 2784,
+    "fresh_attempted": 96,
+    "replacement": "tamilnadu-electricity",
+    "counts": {
+      "complete": 2880,
+      "censored": 0,
+      "failed": 0
+    },
+    "fresh_counts": {
+      "complete": 96,
+      "censored": 0,
+      "failed": 0
+    },
+    "round_cap": 289,
+    "wall_seconds": 15.0239216319751,
+    "job_cpu_seconds": 152.153323248,
+    "training_cpu_seconds": 149.097780472,
+    "workers": 32,
+    "fit_cpu_cap": 300
+  },
+  "replay": {
+    "trajectories": 2100,
+    "queries": 67200,
+    "wall_seconds": 10.910493296105415,
+    "cpu_seconds": 291.98472464400004,
+    "fresh_objective_fits": 0
+  },
+  "prior": {
+    "source_families": [
+      "openml-family:1039",
+      "openml-family:1043",
+      "openml-family:1049",
+      "openml-family:1461",
+      "openml-family:1464",
+      "openml-family:1466",
+      "openml-family:1475",
+      "openml-family:1494",
+      "openml-family:1497",
+      "openml-family:1501",
+      "openml-family:151",
+      "openml-family:1528",
+      "openml-family:1547",
+      "openml-family:185",
+      "openml-family:216",
+      "openml-family:32",
+      "openml-family:377",
+      "openml-family:40922",
+      "openml-family:40966",
+      "openml-family:40978",
+      "openml-family:40983",
+      "openml-family:40994",
+      "openml-family:41162",
+      "openml-family:41168",
+      "openml-family:4134",
+      "openml-family:4135",
+      "openml-family:41540",
+      "openml-family:416",
+      "openml-family:41671",
+      "openml-family:42225",
+      "openml-family:42345",
+      "openml-family:42572",
+      "openml-family:42726",
+      "openml-family:43071",
+      "openml-family:4538",
+      "openml-family:4541",
+      "openml-family:507",
+      "openml-family:54",
+      "openml-family:546",
+      "openml-family:574",
+      "openml-family:6",
+      "openml-family:60",
+      "openml-family:6332",
+      "openml-family:727",
+      "openml-family:757",
+      "openml-family:802",
+      "openml-family:807",
+      "openml-family:839",
+      "openml-family:871",
+      "openml-family:901"
+    ],
+    "source_datasets": 50,
+    "source_observations": 1999,
+    "distinct_configurations": 40,
+    "features": [
+      "log_learning_rate",
+      "depth_active",
+      "depth",
+      "leaves_active",
+      "log_leaves",
+      "lossguide",
+      "log_min_child_weight",
+      "subsample",
+      "column_tree",
+      "column_level",
+      "column_node",
+      "lambda_active",
+      "log_lambda",
+      "alpha_active",
+      "log_alpha",
+      "gamma_active",
+      "log_gamma",
+      "log_max_bin"
+    ],
+    "mean_training_predictions": [
+      0.508607804775238,
+      -0.7025265693664551,
+      -0.13091066479682922,
+      0.820672333240509,
+      0.0081557035446167,
+      0.28304523229599,
+      1.5511358976364136,
+      -0.4888061583042145,
+      -0.10514280200004578,
+      -0.5386430025100708,
+      -0.3813741207122803,
+      -0.3547552525997162,
+      0.5169806480407715,
+      -0.18456071615219116,
+      -0.5969789624214172,
+      0.1184166818857193,
+      -0.2359170913696289,
+      -0.11546643823385239,
+      0.8680704236030579,
+      0.5577957034111023,
+      -0.6430942416191101,
+      0.20144148170948029,
+      -0.20566600561141968,
+      1.0443991422653198,
+      0.5436861515045166,
+      0.6365302801132202,
+      0.12522588670253754,
+      -0.19710400700569153,
+      -0.5597587823867798,
+      -0.26459842920303345,
+      -0.2753024399280548,
+      -0.06999365240335464,
+      0.038282617926597595,
+      -0.327204167842865,
+      -0.5966565608978271,
+      0.1495514065027237,
+      -0.7231476902961731,
+      -0.26090192794799805,
+      -0.17214587330818176,
+      0.14306040108203888
+    ],
+    "scale_training_predictions": [
+      0.7159778644442913,
+      0.6824759954381003,
+      0.8605711848679294,
+      0.9760793309527467,
+      0.7001282096108492,
+      0.916878058810153,
+      0.9621287645371264,
+      0.6927194126456613,
+      0.7365428959937735,
+      0.7289826363163942,
+      0.8041100007153741,
+      0.830280692901495,
+      0.8793214968583019,
+      0.7318904744156969,
+      0.822120416370862,
+      0.7978380053500213,
+      0.8270894089228215,
+      0.8472249729049235,
+      0.8662063676061732,
+      1.1291751650778346,
+      0.7427797722312808,
+      0.9293473923428661,
+      0.8543861444277034,
+      1.0059648284749207,
+      0.85092666372666,
+      0.8691477505985069,
+      0.8031453319326862,
+      0.6935121041842941,
+      0.6763256701984254,
+      0.7112626762717424,
+      0.8157816645455733,
+      0.8689645218192852,
+      0.9718303659718721,
+      0.8890241914157373,
+      0.8185890228545852,
+      0.9250869782172654,
+      0.7252770905543796,
+      0.7990090342277374,
+      0.7577648504168604,
+      0.9870149695180294
+    ],
+    "logtheta": [
+      0.2153627916086091,
+      0.12796227602395555,
+      -0.49742116003730436,
+      0.8845761764550389,
+      4.605170185988092,
+      4.605170185988092,
+      -1.3686227431223652,
+      0.24827936993033864,
+      4.605170185988092,
+      4.605170185988092,
+      0.13460397073678368,
+      4.605170185988092,
+      -0.06437157564660755,
+      4.605170185988092,
+      -0.7152748942341389,
+      4.605170185988092,
+      -0.5066606532612701,
+      0.4121110797894677,
+      -0.08193325896513784,
+      -1.9683127039018466
+    ],
+    "lengthscales": {
+      "log_learning_rate": 1.2403117900619007,
+      "depth_active": 1.1365101282075165,
+      "depth": 0.6080968237917882,
+      "leaves_active": 2.4219576912366034,
+      "log_leaves": 100.00000000000004,
+      "lossguide": 100.00000000000004,
+      "log_min_child_weight": 0.25445717122085565,
+      "subsample": 1.2818179835780763,
+      "column_tree": 100.00000000000004,
+      "column_level": 100.00000000000004,
+      "column_node": 1.1440836040341404,
+      "lambda_active": 100.00000000000004,
+      "log_lambda": 0.9376565244629416,
+      "alpha_active": 100.00000000000004,
+      "log_alpha": 0.4890576541870699,
+      "gamma_active": 100.00000000000004,
+      "log_gamma": 0.6025041936291189,
+      "log_max_bin": 1.5100021577351201
+    },
+    "amplitude": 0.9213334473921483,
+    "noise_variance": 0.1396923598507135,
+    "restarts": [
+      {
+        "value": 1.3334732528883275,
+        "theta": [
+          0.2398252660890023,
+          -0.014216533272813664,
+          -0.6633537362906733,
+          0.6206058286843067,
+          4.605170185988092,
+          1.245909700822655,
+          -1.4321093048236686,
+          0.10302550667960321,
+          4.605170185988092,
+          4.605170185988092,
+          -0.23305922570023807,
+          3.4140181975003823,
+          -0.07443763394318643,
+          4.547886652149019,
+          -0.7929467185426138,
+          4.605170185988092,
+          -0.6133256187635108,
+          0.3303293849302612,
+          0.04466890087307016,
+          -13.815400659017751
+        ],
+        "success": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+        "iterations": 300
+      },
+      {
+        "value": 1.333395589768564,
+        "theta": [
+          0.21565781718001287,
+          0.12631881678104517,
+          -0.49928275038066866,
+          0.8813446325874659,
+          4.605170185988092,
+          3.2407714835228623,
+          -1.3697216549296822,
+          0.24695515681105643,
+          4.605170185988092,
+          4.605170185988092,
+          0.13066254846129016,
+          4.605170185988092,
+          -0.06449624865187824,
+          4.605170185988092,
+          -0.7164021987656612,
+          4.605170185988092,
+          -0.507920743839529,
+          0.4113177096547775,
+          -0.08044943267135675,
+          -1.9796806128620472
+        ],
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "iterations": 106
+      },
+      {
+        "value": 1.3333953808516437,
+        "theta": [
+          0.2153627916086091,
+          0.12796227602395555,
+          -0.49742116003730436,
+          0.8845761764550389,
+          4.605170185988092,
+          4.605170185988092,
+          -1.3686227431223652,
+          0.24827936993033864,
+          4.605170185988092,
+          4.605170185988092,
+          0.13460397073678368,
+          4.605170185988092,
+          -0.06437157564660755,
+          4.605170185988092,
+          -0.7152748942341389,
+          4.605170185988092,
+          -0.5066606532612701,
+          0.4121110797894677,
+          -0.08193325896513784,
+          -1.9683127039018466
+        ],
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "iterations": 121
+      }
+    ],
+    "boundaries": [
+      4,
+      5,
+      8,
+      9,
+      11,
+      13,
+      15
+    ],
+    "parameters": {
+      "objective": "reg:squarederror",
+      "max_depth": 3,
+      "eta": 0.05,
+      "tree_method": "hist",
+      "max_bin": 128,
+      "nthread": 1,
+      "min_child_weight": 1,
+      "reg_lambda": 1,
+      "reg_alpha": 0,
+      "gamma": 0,
+      "subsample": 1.0,
+      "colsample_bytree": 1.0
+    },
+    "mean_scale_boosting_rounds": 200,
+    "total_fit_weight": 200,
+    "cpu_seconds": 0.275432251,
+    "wall_seconds": 0.27509637002367526,
+    "historical_xgb_fits": 2,
+    "kernel_starts": 3,
+    "target_losses_read": 0
+  },
+  "pointwise_intervals": "10000 dataset-family bootstrap draws after averaging optimizer seeds",
+  "limitations": [
+    "one validation split and objective seed per target",
+    "targets held out from this prior but inspected in previous different studies",
+    "finite-pool adaptations of SMAC and TPE",
+    "40 distinct source configurations",
+    "same locally snapshotted development binary, not a pinned release build",
+    "intervals conditional on this trained prior and candidate pool"
+  ]
+}

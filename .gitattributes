@@ -1,0 +1,6 @@
+*.parquet binary
+*.npz binary
+*.ubj binary
+*.gz binary
+*.png binary
+*.pdf binary

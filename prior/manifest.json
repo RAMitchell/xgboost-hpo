@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "encoding": "xgboost-hpo-v1",
+  "direction": "minimize",
+  "training_regime": "CPU hist, unweighted logloss/mlogloss or RMSE; training-selected intercept; early stopping; no test-loss input",
+  "files": {
+    "mean.ubj": "fc0addedea603bba598b2ff1e0e96c285e93fb0f70db1082b905a7f1793e4a66",
+    "scale.ubj": "261d9525eb79e77ca863a98f7fb273b9a8dda96216dbc67f25727c4d5bf00b52",
+    "model.json": "99af94f24063f7a0ce4456a17ad15802119815ce342bcf5d41f28de4dff1d880"
+  },
+  "source_snapshot": "source-evaluations-v1",
+  "source_datasets": 50,
+  "source_observations": 1999,
+  "source_data_sha256": "7c32142cb15c165568c77ff71ab71d3dea8445d7830432dc0146b91291519d28",
+  "source_configurations_sha256": "8ff8d90a64271fcd025c23268ce3786b54bbeab1a2c921549ddccb1249e6a029"
+}

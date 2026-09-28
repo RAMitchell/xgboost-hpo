@@ -1,0 +1,3 @@
+# Scope
+
+This repository reproduces the historical prior for XGBoost ask/tell HPO. Keep the default branch minimal. Published history starts at the compact snapshot. Do not reintroduce the removed research history or create archive tags pointing to it. The original local research checkout remains separate and must not be cleaned or reset. Do not change the immutable input data or archived prior in place. Train into `build/prior`. Preserve failed records and source/target family separation. No test-loss input. Record XGBoost library identity and do not promise bitwise reproduction across builds.
